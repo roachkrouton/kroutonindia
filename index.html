@@ -73,7 +73,51 @@
                 });
             });
 
-              
+              // AutoTyping script
+              document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Hello World", "Full Service.", "Web Development.", "KROUTON SOFTWARE SOLUTIONS!"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h2
+     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+              // AutoTyping script ends here
             
          </script>
          <style type="text/css">
@@ -166,6 +210,7 @@
             text-align: center;
             color: #ffffff;
             }
+
             .service-title{
             font-size: 68px;
             font-style: normal;
@@ -174,14 +219,17 @@
             margin-bottom: .53em;
             margin: 0;
             }
+
             .services-item{
             position: relative;
             padding: 40px 40px;
             width: 100%;
             }
+
             .service-icon{
             padding: 30px 30px;
             }
+
             .services-heading{
             color: #ffffff;
             text-align: center;
@@ -345,6 +393,42 @@ html, body {
     border: none;
     outline: none;
 }
+
+/*For AutoTyping Text*/
+.autotyping{
+    position: relative;
+   /* text-align: center;*/
+    /*color: white;*/
+}
+
+
+.typingtext {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /*transform: translate(-40%, -40%);*/
+    color: red;
+}
+
+h2 {
+  font-size: 5em;
+  color: white;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*AutoTyping Ends Here*/
 
 @media only screen and (max-width: 900px) {
     #videobutton{
@@ -553,13 +637,22 @@ html, body {
             <!-- End  bootstrap-touch-slider Slider -->
          </section>
          <!-- End off homev1 section -->
-         <div class="container-fluid">
+
+         <div class="container-fluid" class="autotyping">
             <div class="row">
                <img src="assets/digital-experience.jpg"  class="img-responsive">
-               <div class="col-md-6">
+               <h2 class="typingtext"> Hello World </h2>
+            </div>
+         </div>
+
+
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
                   <img src="assets/bulb.jpg"  class="img-responsive" style="padding-top: 90px;">
-               </div>
-               <div class="col-md-6">
+                </div>
+
+                <div class="col-md-6">
                   <span class="text1">
                      <h1><strong>Empowering Digital Experiences</strong> for tomorrow's world.</h1>
                   </span>
