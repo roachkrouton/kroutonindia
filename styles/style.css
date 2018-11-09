@@ -2537,13 +2537,7 @@ localseo-hv2 section
 .weidgetv2-item .service .item-service .custom-hover{
     background-color: rgba(19, 160, 178, 0.70);
 }
-.weidgetv2-item ul li a{
-    background: url(../images/list-dotted.png) no-repeat left center;
-    padding-left: 35px;
-    color: #9c9c9c;
-    margin-bottom: 12px;
-    display: inline-block;
-}
+
 .weidgetv2-item ul li:hover a{
     color: #fff;
 }
