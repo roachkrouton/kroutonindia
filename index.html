@@ -23,103 +23,7 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-         <script>
-            
-            $(document).on("scroll", function(){
-              if($("#parallax").scrollTop() >86){
-                 $('html, body').animate({
-                  scrollTop: $(".culmn").offset().top
-                  }, 1000)
-            }
-            else
-              {
-                $("#parallax").slideDown(2500);  
-              }
-            });
-
-            $(document).ready(function () {
-              $("#goup").click(function() {
-                $('html, body').animate({
-                  scrollTop: $("#parallax").offset().top
-                }, 1000)
-              });
-            });
-
-
-            // $(document).ready(function () {
-            //   $("#parallax").click(function() {
-            //     $('html, body').animate({
-            //       scrollTop: $(".culmn").offset().top
-            //     }, 1000)
-            //   });
-            // });
-
-            // Go down on click of button
-             $(document).ready(function () {
-              $("#videobutton").click(function() {
-                $('html, body').animate({
-                  scrollTop: $(".culmn").offset().top
-                }, 1000)
-              });
-            });
-
-            $(document).ready(function(){
-                $("#videobutton").mouseover(function(){
-                    $("#parallax").css("opacity", "0.5");
-                    // $("#parallax").css("background", "red 0.5");
-                });
-                $("#videobutton").mouseout(function(){
-                    $("#parallax").css("opacity", "1");
-                });
-            });
-
-              // AutoTyping script
-              document.addEventListener('DOMContentLoaded',function(event){
-  // array with texts to type in typewriter
-  var dataText = [ "Hello World", "Full Service.", "Web Development.", "KROUTON SOFTWARE SOLUTIONS!"];
-  
-  // type one text in the typwriter
-  // keeps calling itself until the text is finished
-  function typeWriter(text, i, fnCallback) {
-    // chekc if text isn't finished yet
-    if (i < (text.length)) {
-      // add next character to h2
-     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
-
-      // wait for a while and call this function again for next character
-      setTimeout(function() {
-        typeWriter(text, i + 1, fnCallback)
-      }, 100);
-    }
-    // text finished, call callback if there is a callback function
-    else if (typeof fnCallback == 'function') {
-      // call callback after timeout
-      setTimeout(fnCallback, 700);
-    }
-  }
-  // start a typewriter animation for a text in the dataText array
-   function StartTextAnimation(i) {
-     if (typeof dataText[i] == 'undefined'){
-        setTimeout(function() {
-          StartTextAnimation(0);
-        }, 20000);
-     }
-     // check if dataText[i] exists
-    if (i < dataText[i].length) {
-      // text exists! start typewriter animation
-     typeWriter(dataText[i], 0, function(){
-       // after callback (and whole text has been animated), start next text
-       StartTextAnimation(i + 1);
-     });
-    }
-  }
-  // start the text animation
-  StartTextAnimation(0);
-});
-
-              // AutoTyping script ends here
-            
-         </script>
+       
          <style type="text/css">
             .text1 h1{
             font-size:4.06vw;
@@ -948,5 +852,102 @@ span {
       <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
       <script src="scripts/vendor/bootstrap.js"></script>
       <script src="scripts/bootsnav.js"></script>
+        <script>
+            
+            $(document).on("scroll", function(){
+              if($("#parallax").scrollTop() >86){
+                 $('html, body').animate({
+                  scrollTop: $(".culmn").offset().top
+                  }, 1000)
+            }
+            else
+              {
+                $("#parallax").slideDown(2500);  
+              }
+            });
+
+            $(document).ready(function () {
+              $("#goup").click(function() {
+                $('html, body').animate({
+                  scrollTop: $("#parallax").offset().top
+                }, 1000)
+              });
+            });
+
+
+            // $(document).ready(function () {
+            //   $("#parallax").click(function() {
+            //     $('html, body').animate({
+            //       scrollTop: $(".culmn").offset().top
+            //     }, 1000)
+            //   });
+            // });
+
+            // Go down on click of button
+             $(document).ready(function () {
+              $("#videobutton").click(function() {
+                $('html, body').animate({
+                  scrollTop: $(".culmn").offset().top
+                }, 1000)
+              });
+            });
+
+            $(document).ready(function(){
+                $("#videobutton").mouseover(function(){
+                    $("#parallax").css("opacity", "0.5");
+                    // $("#parallax").css("background", "red 0.5");
+                });
+                $("#videobutton").mouseout(function(){
+                    $("#parallax").css("opacity", "1");
+                });
+            });
+
+              // AutoTyping script
+              document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Hello World", "Full Service.", "Web Development.", "KROUTON SOFTWARE SOLUTIONS!"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h2
+     document.querySelector("h2").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+
+              // AutoTyping script ends here
+            
+         </script>
    </body>
 </html>
