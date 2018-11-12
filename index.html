@@ -1178,15 +1178,6 @@ height: 23px;
            });
          });
 
-                 
-         // $(document).ready(function () {
-         //   $("#parallax").click(function() {
-         //     $('html, body').animate({
-         //       scrollTop: $(".culmn").offset().top
-         //     }, 1000)
-         //   });
-         // });
-         
          // Go down on click of button
           $(document).ready(function () {
            $("#videobutton").click(function() {
@@ -1208,13 +1199,13 @@ height: 23px;
          });
 
 // typing script
-         var text = 'Empowering Digital Experiences! ';
+         
+    var text = 'Empowering Digital Experiences! ';
+    var chars = text.split('');
+    var container = document.getElementById("typewriter");
 
-var chars = text.split('');
-var container = document.getElementById("typewriter");
-
-var i = 0;
-setInterval(function () {
+    var i = 0;
+    setInterval(function () {
     if (i < chars.length) {
         container.innerHTML += chars[i++];
     } else {
@@ -1224,7 +1215,5 @@ setInterval(function () {
 }, 120);
          
        </script>
-       
-
    </body>
 </html>
