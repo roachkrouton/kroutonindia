@@ -853,7 +853,7 @@ nav.navbar.bootsnav.no-background{
 
    </style>
    </head>
-   <body data-spy="scroll" data-target=".navbar-collapse">
+   <body data-spy="scroll" data-target=".navbar-collapse" >
       <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
          <div class="container-fluid">
             <div class="row">
@@ -872,7 +872,7 @@ nav.navbar.bootsnav.no-background{
                      <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
                            <li><a href="#home">Home</a> </li>
-                           <li><a href="#allies">About Us</a></li>
+                           <li><a href="#banner_img">About Us</a></li>
                            <li><a href="#service">Service</a></li>
                         </ul>
                      </div>
@@ -890,9 +890,9 @@ nav.navbar.bootsnav.no-background{
       </section>
 
       <section>
-          <div class="collapse navbar-collapse" id="navbar-menu1" class="navbar-fixed" style="text-align:center;display: inline-block;">
-                <ul class="nav navbar-nav"  data-in="fadeIn" data-out="fadeOut">
-                   <li><a href="#page1">Part1</a> </li>
+          <div class="collapse navbar-collapse" id="navbar-menu1" class="navbar-fixed" >
+                <ul class="nav navbar-nav"  data-in="fadeIn" data-out="fadeOut" style="left:50%;">
+                   <li><a href="#aa_particles">Part1</a> </li>
                    <li><a href="#page2">Part2</a></li>
                    <li><a href="#page3">Part3</a></li>
                 </ul>
@@ -1217,24 +1217,22 @@ requestAnimationFrame(update);
       <script src="scripts/bootsnav.js"></script>
        
        <script>
-           $(function(){
-  
-    createSticky($("#navbar-menu1"));
 
-});
-
-function createSticky(sticky) {
+        $(function(){
+            createSticky($("#navbar-menu1"));
+        });
     
-    if (typeof sticky !== "undefined") {
-
-        var pos = sticky.offset().top,
+        function createSticky(sticky) {    
+            if (typeof sticky !== "undefined") {
+            var pos = sticky.offset().top,
                 win = $(window);
             
-        win.on("scroll", function() {
+            win.on("scroll", function() {
             win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");      
-        });         
+            });         
+        }
     }
-}
+
        </script>
     </script>
    </body>
