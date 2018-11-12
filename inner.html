@@ -804,6 +804,51 @@ height: 23px;
     background: #000000;
 }
 
+/*stick css*/
+nav.navbar.bootsnav.no-background{
+    -webkit-transition:all 1s ease-in-out;
+    -moz-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out
+}
+
+nav.navbar.bootsnav.no-background{
+        background-color:transparent;
+        border:none
+    }
+
+ nav.navbar.bootsnav.navbar-transparent.white .attr-nav>ul>li>a,nav.navbar.bootsnav.navbar-transparent.white ul.nav>li>a,nav.navbar.bootsnav.no-background.white .attr-nav>ul>li>a,nav.navbar.bootsnav.no-background.white ul.nav>li>a{
+        color:#fff
+    }
+
+  nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-scrolled,nav.navbar.bootsnav.navbar-fixed.no-background .logo-scrolled{
+        display:none
+    }
+
+   nav.navbar.bootsnav.navbar-fixed.navbar-transparent .logo-display,nav.navbar.bootsnav.navbar-fixed.no-background .logo-display{
+        display:block
+    }
+/*end of sticky css*/
+
+.no-backgroundP{
+    position: fixed;
+    background-color:red;
+}
+
+#navbar-menu1{
+    background-color: yellow;
+    padding: 3px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.fixed {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+     z-index: 1;
+}
 
 
    </style>
@@ -839,16 +884,22 @@ height: 23px;
          <!-- Start Side Menu -->
          <!-- End Side Menu -->
       </nav>
-      <!-- End off Nav -->       
-     
-      <ul class="snip1555">
-      <li class="current"><a href="#" data-hover="Home">Home</a></li>
-      <li><a href="www.gmail.com" data-hover="About Us">About Us</a></li>
-      <li><a href="#" data-hover="Blog">Blog</a></li>
-      <li><a href="#" data-hover="Services">Services</a></li>
-      <li><a href="#" data-hover="Products">Products</a></li>
-      </ul>  
-         
+
+      <section id="banner_img">
+            <img src="assets/bgslide.jpg" >
+      </section>
+
+      <section>
+          <div class="collapse navbar-collapse" id="navbar-menu1" class="navbar-fixed" style="text-align:center;display: inline-block;">
+                <ul class="nav navbar-nav"  data-in="fadeIn" data-out="fadeOut">
+                   <li><a href="#page1">Part1</a> </li>
+                   <li><a href="#page2">Part2</a></li>
+                   <li><a href="#page3">Part3</a></li>
+                </ul>
+            </div>
+      </section>
+      
+      
          
          <section id="service" class="service sections">
             <div class="container">
@@ -940,8 +991,7 @@ height: 23px;
     
      
    <section id="aa_particles" >
-         <div class="container" style="    position: absolute;
-    margin: 0px 100px;">
+         <div class="container" style="position: absolute; margin: 0px 100px;">
             <div class="row">
                <div class="col-md-12 col-md-offset-5">
                   <img class="footer-logo text-center" src="assets/footerlogo.png">
@@ -1156,7 +1206,9 @@ update = function() {
     }
     requestAnimationFrame(update);
 };
-requestAnimationFrame(update);;
+requestAnimationFrame(update);
+
+
 
       </script>
       <!-- JS includes -->
@@ -1164,6 +1216,26 @@ requestAnimationFrame(update);;
       <script src="scripts/vendor/bootstrap.js"></script>
       <script src="scripts/bootsnav.js"></script>
        
+       <script>
+           $(function(){
+  
+    createSticky($("#navbar-menu1"));
+
+});
+
+function createSticky(sticky) {
+    
+    if (typeof sticky !== "undefined") {
+
+        var pos = sticky.offset().top,
+                win = $(window);
+            
+        win.on("scroll", function() {
+            win.scrollTop() >= pos ? sticky.addClass("fixed") : sticky.removeClass("fixed");      
+        });         
+    }
+}
+       </script>
     </script>
    </body>
 </html>
