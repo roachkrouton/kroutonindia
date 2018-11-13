@@ -421,12 +421,13 @@ height: 500px !important;
 background: #000000;
 }
 
-
+/*Tab Menu*/
 #navbar-menu1{
-background-color: #F0F3F4;
+background-color:#DDDAF9;
 padding: 3px;
 padding: 10px 20px;
 color: #fff;
+/**/
 }
 
 .fixed {
@@ -437,22 +438,61 @@ z-index: 1;
 }
 
 #navbar-menu1{
- text-align: center; 
+ width: 100%; overflow: hidden;
 }
 
 #navbar-menu1 ul{
- list-style: none; 
+ list-style: none; position: relative; float: left; display: block; left: 50%;
 }
 
 #navbar-menu1 ul li {
- display: inline; 
- padding-left: 20px;
+ position: relative; float: left; display: block; right: 50%;
 }
 
+#banner_img{
+/*height: 400px;*/
+}
 
-   </style>
-   </head>
-   <body data-spy="scroll" data-target=".navbar-collapse" >
+/*Parallax Page css*/
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+.block{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400;
+}
+.img-parallax {
+  width: 100%;
+  z-index: -1;
+  /*position: absolute;*/
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
+
+/*Parallax Page css end*/
+ 
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" >
       <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
          <div class="container-fluid">
             <div class="row">
@@ -485,110 +525,49 @@ z-index: 1;
       </nav>
 
       <section id="banner_img">
-            <img src="assets/bgslide.jpg" >
+            <img src="assets/dark.jpg" >
       </section>
 
       <section>
           <div class="collapse navbar-collapse" id="navbar-menu1" class="navbar-fixed" >
                 <ul class="nav navbar-nav"  data-in="fadeIn" data-out="fadeOut" style="left:50%;">
-                   <li><a href="#aa_particles">Part1</a> </li>
-                   <li><a href="#page2">Part2</a></li>
-                   <li><a href="#page3">Part3</a></li>
+                   <li><a href="#">section1</a> </li>
+                   <li><a href="#">section2</a></li>
+                   <li><a href="#">section3</a></li>
+                   <li><a href="#">section4</a></li>
+                   <li><a href="#">section5</a></li>
                 </ul>
             </div>
       </section>
-      
-      
-         
-         <section id="service" class="service sections">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <h1 class="service-title text-center">OUR SERVICES</h1>
-                     <p class="service-desc" > Krouton seamlessly integrates into your business workflow whether you are looking to create a new application or help with development and/or QA of your existing solution. We provide teams capable of increasing the velocity of your development or extending your technical capabilities.</p>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon filter-drop-shadow">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img src="assets/serviceicon1.png" alt="">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                     <div class="col-md-3 no-padding">
-                        <div class="services-item">
-                           <div class="service-icon">
-                              <img class="static" src="https://lh4.googleusercontent.com/-gZiu96oTuu4/Uag5oWLQHfI/AAAAAAAABSE/pl1W8n91hH0/w140-h165-no/Homer-Static.png"><img class="active" src="https://lh4.googleusercontent.com/i1RprwcvxhbN2TAMunNxS4RiNVT0DvlD9FNQCvPFuJ0=w140-h165-no">
-                           </div>
-                           <h5 class="services-heading">Web Development</h5>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <!-- End off container -->
-         </section>
-      </div>
-      
-       <!-- Tab Navigation -->
-       
+
+      <section>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?image=1005" data-speed="-1" class="img-parallax">
+          <h2>Parallax Speed -1</h2>
+        </div>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
+          <h2>Parallax Speed 1</h2>
+        </div>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?gravity=center" data-speed="-0.25" class="img-parallax">
+          <h2>Parallax Speed -0.25</h2>
+        </div>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?image=1080" data-speed="0.25" class="img-parallax">
+          <h2>Parallax Speed 0.25</h2>
+        </div>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
+          <h2>Parallax Speed -0.75</h2>
+        </div>
+        <div class="block">
+          <img src="https://unsplash.it/1920/1920/?blur" data-speed="0.75" class="img-parallax">
+          <h2>Parallax Speed 0.75</h2>
+        </div>
+      </section>
+          
     
-     
    <section id="aa_particles" >
          <div class="container" style="position: absolute; margin: 0px 100px;">
             <div class="row">
@@ -654,6 +633,7 @@ z-index: 1;
             <!-- <div class="divider"></div> -->
          </div>
       </section>
+
        <div class="col-sm-12 copy-right">
          <div class="footer-info">
             <div class="footer-info1">
@@ -673,10 +653,6 @@ z-index: 1;
          </div>
       </div>
 
-     
-    
-<div >
-</div>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script type="text/javascript">
 particlesJS("aa_particles", {
@@ -815,6 +791,48 @@ requestAnimationFrame(update);
       <script src="scripts/vendor/bootstrap.js"></script>
       <script src="scripts/bootsnav.js"></script>
        
+    </script>
+
+    <script type="text/javascript">
+        // I know that the code could be better.
+// If you have some tips or improvement, please let me know.
+// Below code is for parallax page
+$('.img-parallax').each(function(){
+  var img = $(this);
+  var imgParent = $(this).parent();
+  function parallaxImg () {
+    var speed = img.data('speed');
+    var imgY = imgParent.offset().top;
+    var winY = $(this).scrollTop();
+    var winH = $(this).height();
+    var parentH = imgParent.innerHeight();
+
+
+    // The next pixel to show on screen      
+    var winBottom = winY + winH;
+
+    // If block is shown on screen
+    if (winBottom > imgY && winY < imgY + parentH) {
+      // Number of pixels shown after block appear
+      var imgBottom = ((winBottom - imgY) * speed);
+      // Max number of pixels until block disappear
+      var imgTop = winH + parentH;
+      // Porcentage between start showing until disappearing
+      var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
+    }
+    img.css({
+      top: imgPercent + '%',
+      transform: 'translate(-50%, -' + imgPercent + '%)'
+    });
+  }
+  $(document).on({
+    scroll: function () {
+      parallaxImg();
+    }, ready: function () {
+      parallaxImg();
+    }
+  });
+});
     </script>
    </body>
 </html>
