@@ -64,7 +64,7 @@
       <div class="culmn">
          <!--Home page style-->
          <section id="homev2" class="homev2">
-            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line hv2-slider" data-ride="carousel" data-interval="10000" >
+            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line hv2-slider" data-ride="carousel" data-interval="20000" >
                <!-- Wrapper For Slides -->
                <div class="carousel-inner" role="listbox">
                   <!-- Third Slide -->
@@ -72,14 +72,14 @@
                      <!-- Slide Background -->
                      <img src="assets/slide-bg-01.jpg" alt="SeoPress Slider" />
                      <div class="bs-slider-overlay"></div>
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-6 col-sm-12">
+                     <div class="container autotypingtext">
+                        <div class="row" style="position: relative;">
+                           <div class="col-md-6 col-sm-12 ">
                               <div class="slide-text slide_style_left m-top-20">
-                                 <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
-                                    Solution 
-                                 </h1>
-                                 <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span>
+                                 <div class="typewriter" style="position: absolute;"> 
+                        <div id="typewriter"></div>
+                   </div>
+                                 
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomIn">
@@ -102,7 +102,7 @@
                                  <h1 class="text-white" data-animation="animated fadeInUp">Your All-In-One 
                                     Solution 
                                  </h1>
-                                 <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
+                                
                               </div>
                            </div>
                            <div class="col-md-6 col-sm-12 homev2-slid-img hidden-sm hidden-xs" data-animation="animated zoomInRight">
@@ -125,7 +125,7 @@
                                  <h1 class="text-white" data-animation="animated fadeInUp">You Deserve More Than
                                     <br /> Just Traffic. 
                                  </h1>
-                                 <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
+                                
                               </div>
                            </div>
                         </div>
@@ -145,7 +145,7 @@
                            <div class="col-md-7 col-sm-12">
                               <div class="slide-text slide_style_left">
                                  <h1 class="text-white" data-animation="animated fadeInUp">A New Type of Digital Marketing Agency & Service.</h1>
-                                 <!-- <span class="btn btn-primary btn-lg" id="goup">CLICK ME TO GO UP</span> -->
+                                
                               </div>
                            </div>
                         </div>
@@ -407,181 +407,14 @@
 <div >
 </div>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-<script type="text/javascript">
-particlesJS("aa_particles", {
-    "particles": {
-        "number": {
-            "value": 60,
-            "density": {
-                "enable": true,
-                "value_area": 800
-            }
-        },
-        "color": {
-            "value": "#ffffff"
-        },
-        "shape": {
-            "type": "circle",
-            "stroke": {
-                "width": 0,
-                "color": "#000000"
-            },
-            "polygon": {
-                "nb_sides": 5
-            },
-            "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-            }
-        },
-        "opacity": {
-            "value": 0.25,
-            "random": false,
-            "anim": {
-                "enable": false,
-                "speed": 1,
-                "opacity_min": 0.1,
-                "sync": false
-            }
-        },
-        "size": {
-            "value": 3,
-            "random": true,
-            "anim": {
-                "enable": false,
-                "speed": 40,
-                "size_min": 0.1,
-                "sync": false
-            }
-        },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.3,
-            "width": 1
-        },
-        "move": {
-            "enable": true,
-            "speed": 3,
-            "direction": "none",
-            "random": false,
-            "straight": false,
-            "out_mode": "out",
-            "bounce": false,
-            "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-            }
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "repulse"
-            },
-            "onclick": {
-                "enable": true,
-                "mode": "push"
-            },
-            "resize": true
-        },
-        "modes": {
-            "grab": {
-                "distance": 400,
-                "line_linked": {
-                    "opacity": 1
-                }
-            },
-            "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
-            },
-            "repulse": {
-                "distance": 200,
-                "duration": 0.4
-            },
-            "push": {
-                "particles_nb": 4
-            },
-            "remove": {
-                "particles_nb": 2
-            }
-        }
-    },
-    "retina_detect": true
-});
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);;
 
-</script>
       <!-- JS includes -->
       <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
       <script src="scripts/vendor/bootstrap.js"></script>
       <script src="scripts/bootsnav.js"></script>
-      <script>
-         $(document).on("scroll", function(){
-           if($("#parallax").scrollTop() >86){
-              $('html, body').animate({
-               scrollTop: $(".culmn").offset().top
-               }, 1000)
-         }
-         else
-           {
-             $("#parallax").slideDown(2500);  
-           }
-         });
-         
-         $(document).ready(function () {
-           $("#goup").click(function() {
-             $('html, body').animate({
-               scrollTop: $("#parallax").offset().top
-             }, 1000)
-           });
-         });
-
-         // Go down on click of button
-          $(document).ready(function () {
-           $("#videobutton").click(function() {
-             $('html, body').animate({
-               scrollTop: $(".culmn").offset().top
-             }, 1000)
-             // $('.culmn').height($(window).height());
-           });
-         });
-         
-         $(document).ready(function(){
-             $("#videobutton").mouseover(function(){
-                 $("#parallax").css("opacity", "0.5");
-                 // $("#parallax").css("background", "red 0.5");
-             });
-             $("#videobutton").mouseout(function(){
-                 $("#parallax").css("opacity", "1");
-             });
-         });
-
+       <script src="scripts/custom.js"></script>
+     
+<script type="text/javascript">
 // typing script
          
     var text = 'Krouton seamlessly integrates into your business workflow whether you are looking to create a new application or help with development and/or QA of your existing solution. ';
