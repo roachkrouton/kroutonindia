@@ -479,22 +479,22 @@ z-index: 1;
   /*z-index: -1;*/
 }
 .container-fluid section:nth-child(1) .image {
-  background-image: url(https://images.unsplash.com/photo-1463412855783-af97e375664b?iq=100&fm=jpg&w=1000);
+  background-image: url(http://ethios.in/wp-content/uploads/2017/01/sem.jpg);
 }
 .container-fluid section:nth-child(2) .image {
-  background-image: url(https://images.unsplash.com/photo-1462819067004-905a72ea3996?iq=100&fm=jpg&w=1000);
+  background-image: url(https://searchengineland.com/figz/wp-content/seloads/2014/08/seo-idea-lightbulbs-ss-1920.jpg);
 }
 .container-fluid section:nth-child(3) .image {
-  background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);
+  background-image: url(https://www.startupcafedigital.com/wp-content/uploads/2016/08/bigstock-content-marketing-seo-optimiza-91374620.jpg);
 }
 .container-fluid section:nth-child(4) .image {
-  background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);
+  background-image: url(https://optinmonster.com/wp-content/uploads/2016/09/23-Tools-That-Will-Take-Your-Social-Media-Marketing-to-the-Next-Level.png);
 }
 .container-fluid section:nth-child(5) .image {
   background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
 }
 .container-fluid section:nth-child(6) .image {
-  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
+  background-image: url(https://www.copperberg.com/wp-content/uploads/2018/08/digital-transformation-espincorp.jpg);
 }
 .container-fluid section .image {
   background-attachment: fixed;
@@ -515,7 +515,8 @@ z-index: 1;
   justify-content: center;
   text-align: center;
   z-index: 1000;
-  color: #e67e22;
+  /*color: #e67e22;*/
+  color:#FF4500;
   margin: 0 auto;
   font-size: 26px;
   position: relative;
@@ -560,14 +561,14 @@ a:hover, a:focus {
 }
 
 #section1:hover, #section2:hover, #section3:hover, #section4:hover, #section5:hover, #section6:hover{
-    background-color: #ff8080;
+    background-color: #104E8B;
     color:white;
     font-size: 15px;
     border-radius: 20px;
     }
 
 #section1:focus, #section2:focus, #section3:focus, #section4:focus, #section5:focus, #section6:focus{
-    background-color: #ff8080;
+    background-color: #104E8B;
     color:white;
     font-size: 15px;
     border-radius: 20px;
@@ -641,32 +642,32 @@ a:hover, a:focus {
         <div class="container-fluid">
   <section id="one">
     <div class="image" data-type="background" data-speed="2"></div>
-    <div class="stuff" data-type="content"><h1>SECTION ONE</h1><h2>Reoptimized</h2></div>
+    <div class="stuff" data-type="content"><h1>SECTION ONE</h1><h2>SEM</h2></div>
   </section>
 
   <section id="two">
     <div class="image" data-type="background" data-speed="7"></div>
-    <div class="stuff" data-type="content"><h1>SECTION TWO</h1><h2>Made to be fast</h2></div>
+    <div class="stuff" data-type="content"><h1>SECTION TWO</h1><h2>SEO</h2></div>
   </section>
 
   <section id="three">
     <div class="image" data-type="background" data-speed="6"></div>
-    <div class="stuff" data-type="content"><h1>SECTION THREE</h1></div>
+    <div class="stuff" data-type="content"><h1>SECTION THREE</h1><h2>CONTENT MARKETING</h2></div>
   </section>
 
   <section id="four">
     <div class="image" data-type="background" data-speed="5"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FOUR</h1></div>
+    <div class="stuff" data-type="content"><h1>SECTION FOUR</h1><h2>SOCIAL MEDIA MARKETING</h2></div>
   </section>
 
   <section id="five">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FIVE</h1></div>
+    <div class="stuff" data-type="content"><h1>SECTION FIVE</h1><h2>COMING SOON...</h2></div>
   </section>
 
   <section id="six">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION SIX</h1></div>
+    <div class="stuff" data-type="content"><h1>SECTION SIX</h1><h2>COMING SOON...</h2></div>
   </section>
 </div>
      </section>
@@ -994,42 +995,54 @@ requestAnimationFrame(update);
     
     <script >
 
-        $("#section1").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#two").position().top 
+    $(document).ready(function (){
+      $("#section1").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#one").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section2").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#three").position().top 
+    $(document).ready(function (){
+      $("#section2").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#two").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section3").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#four").position().top 
+    $(document).ready(function (){
+      $("#section3").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#three").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section4").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#five").position().top 
+    $(document).ready(function (){
+      $("#section4").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#four").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section5").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#six").position().top 
+    $(document).ready(function (){
+      $("#section5").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#five").offset().top
+            }, 1000);               
         });
     });
 
-    $("#section6").on('click',function() {
-        $('html, body').animate({
-            'scrollTop' : $("#six").position().top 
+    $(document).ready(function (){
+      $("#section6").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#six").offset().top
+            }, 1000);               
         });
     });
-        
+    
 // makes the parallax elements
 function parallaxIt() {
   // create variables
