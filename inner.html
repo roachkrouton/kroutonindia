@@ -424,11 +424,11 @@ background: #000000;
 
 /*Tab Menu*/
 #navbar-menu1{
-background-color:#DDDAF9;
+background-color:#000000;
 padding: 3px;
 padding: 10px 20px;
 color: #fff;
-/**/
+/*#DDDAF9*/
 }
 
 .fixed {
@@ -456,41 +456,128 @@ z-index: 1;
 
 /*Parallax Page css*/
 
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
-
-.block{
-  width: 100%;
+.container-fluid {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   height: 100%;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.container-fluid section {
+  width: 100%;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  text-align: center;
   position: relative;
   overflow: hidden;
-  font-size: 16px;
+  background-color: #000;
+  /*z-index: -1;*/
+}
+.container-fluid section:nth-child(1) .image {
+  background-image: url(http://ethios.in/wp-content/uploads/2017/01/sem.jpg);
+}
+.container-fluid section:nth-child(2) .image {
+  background-image: url(https://searchengineland.com/figz/wp-content/seloads/2014/08/seo-idea-lightbulbs-ss-1920.jpg);
+}
+.container-fluid section:nth-child(3) .image {
+  background-image: url(https://www.startupcafedigital.com/wp-content/uploads/2016/08/bigstock-content-marketing-seo-optimiza-91374620.jpg);
+}
+.container-fluid section:nth-child(4) .image {
+  background-image: url(https://optinmonster.com/wp-content/uploads/2016/09/23-Tools-That-Will-Take-Your-Social-Media-Marketing-to-the-Next-Level.png);
+}
+.container-fluid section:nth-child(5) .image {
+  background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+}
+.container-fluid section:nth-child(6) .image {
+  background-image: url(https://www.copperberg.com/wp-content/uploads/2018/08/digital-transformation-espincorp.jpg);
+}
+.container-fluid section .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  opacity: 0.4;
+}
+.container-fluid section .stuff {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  /*color: #e67e22;*/
+  color:#FF4500;
+  margin: 0 auto;
+  font-size: 26px;
+  position: relative;
+}
+.container-fluid section .stuff h2 {
+  margin: 0px;
+}
+.container-fluid section .stuff:before, .container-fluid section .stuff:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #d35400;
+  content: "";
+  margin: 30px 0;
+}
+.at-twitter {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #f1c40f;
+  z-index: 5000;
+}
+.at-twitter:visited {
+  color: #f1c40f;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: underline;
 }
 
-.block h2{
-  position: relative;
-  display: block;
-  text-align: center;
-  margin: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 10vw;
-  color: white;
-  font-weight: 400;
+.staff{
+    overflow: hidden;
 }
-.img-parallax {
-  width: 100%;
-  z-index: -1;
-  /*position: absolute;*/
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,0);
-  pointer-events: none
+
+.container, .container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
 }
-/*request section css*/
+
+#section1:hover, #section2:hover, #section3:hover, #section4:hover, #section5:hover, #section6:hover{
+    background-color: #104E8B;
+    color:white;
+    font-size: 15px;
+    border-radius: 20px;
+    }
+
+#section1:focus, #section2:focus, #section3:focus, #section4:focus, #section5:focus, #section6:focus{
+    background-color: #104E8B;
+    color:white;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
 
 /*Parallax Page css end*/
  
-
+/*request section css*/
 .request-section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -544,45 +631,49 @@ z-index: 1;
       <section>
           <div class="collapse navbar-collapse" id="navbar-menu1" class="navbar-fixed" >
                 <ul class="nav navbar-nav"  data-in="fadeIn" data-out="fadeOut" style="left:50%;">
-                   <li><a href="#">section1</a> </li>
-                   <li><a href="#">section2</a></li>
-                   <li><a href="#">section3</a></li>
-                   <li><a href="#">section4</a></li>
-                   <li><a href="#">section5</a></li>
+                   <li><a href="#" id="section1">SECTION1</a> </li>
+                   <li><a href="#" id="section2">SECTION2</a></li>
+                   <li><a href="#" id="section3">SECTION3</a></li>
+                   <li><a href="#" id="section4">SECTION4</a></li>
+                   <li><a href="#" id="section5">SECTION5</a></li>
+                   <li><a href="#" id="section6">SECTION6</a></li>
                 </ul>
             </div>
       </section>
 
       <section>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?image=1005" data-speed="-1" class="img-parallax">
-          <h2>Parallax Speed -1</h2>
-        </div>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?image=1067" data-speed="1" class="img-parallax">
-          <h2>Parallax Speed 1</h2>
-        </div>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?gravity=center" data-speed="-0.25" class="img-parallax">
-          <h2>Parallax Speed -0.25</h2>
-        </div>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?image=1080" data-speed="0.25" class="img-parallax">
-          <h2>Parallax Speed 0.25</h2>
-        </div>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?random" data-speed="-0.75" class="img-parallax">
-          <h2>Parallax Speed -0.75</h2>
-        </div>
-        <div class="block">
-          <img src="https://unsplash.it/1920/1920/?blur" data-speed="0.75" class="img-parallax">
-          <h2>Parallax Speed 0.75</h2>
-        </div>
-      </section>
-          
-  
-      
-      
+        <div class="container-fluid">
+  <section id="one">
+    <div class="image" data-type="background" data-speed="2"></div>
+    <div class="stuff" data-type="content"><h1>SECTION ONE</h1><h2>SEM</h2></div>
+  </section>
+
+  <section id="two">
+    <div class="image" data-type="background" data-speed="7"></div>
+    <div class="stuff" data-type="content"><h1>SECTION TWO</h1><h2>SEO</h2></div>
+  </section>
+
+  <section id="three">
+    <div class="image" data-type="background" data-speed="6"></div>
+    <div class="stuff" data-type="content"><h1>SECTION THREE</h1><h2>CONTENT MARKETING</h2></div>
+  </section>
+
+  <section id="four">
+    <div class="image" data-type="background" data-speed="5"></div>
+    <div class="stuff" data-type="content"><h1>SECTION FOUR</h1><h2>SOCIAL MEDIA MARKETING</h2></div>
+  </section>
+
+  <section id="five">
+    <div class="image" data-type="background" data-speed="3"></div>
+    <div class="stuff" data-type="content"><h1>SECTION FIVE</h1><h2>COMING SOON...</h2></div>
+  </section>
+
+  <section id="six">
+    <div class="image" data-type="background" data-speed="3"></div>
+    <div class="stuff" data-type="content"><h1>SECTION SIX</h1><h2>COMING SOON...</h2></div>
+  </section>
+</div>
+     </section>
          
          <section id="service" class="service sections">
             <div class="container">
@@ -925,46 +1016,109 @@ requestAnimationFrame(update);
        
     </script>
 
-    <script type="text/javascript">
-        // I know that the code could be better.
-// If you have some tips or improvement, please let me know.
-// Below code is for parallax page
-$('.img-parallax').each(function(){
-  var img = $(this);
-  var imgParent = $(this).parent();
-  function parallaxImg () {
-    var speed = img.data('speed');
-    var imgY = imgParent.offset().top;
-    var winY = $(this).scrollTop();
-    var winH = $(this).height();
-    var parentH = imgParent.innerHeight();
+    
+    <script >
 
-
-    // The next pixel to show on screen      
-    var winBottom = winY + winH;
-
-    // If block is shown on screen
-    if (winBottom > imgY && winY < imgY + parentH) {
-      // Number of pixels shown after block appear
-      var imgBottom = ((winBottom - imgY) * speed);
-      // Max number of pixels until block disappear
-      var imgTop = winH + parentH;
-      // Porcentage between start showing until disappearing
-      var imgPercent = ((imgBottom / imgTop) * 100) + (50 - (speed * 50));
-    }
-    img.css({
-      top: imgPercent + '%',
-      transform: 'translate(-50%, -' + imgPercent + '%)'
+    $(document).ready(function (){
+      $("#section1").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#one").offset().top
+            }, 1000);               
+        });
     });
-  }
-  $(document).on({
-    scroll: function () {
-      parallaxImg();
-    }, ready: function () {
-      parallaxImg();
-    }
+
+    $(document).ready(function (){
+      $("#section2").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#two").offset().top
+            }, 1000);               
+        });
+    });
+
+    $(document).ready(function (){
+      $("#section3").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#three").offset().top
+            }, 1000);               
+        });
+    });
+
+    $(document).ready(function (){
+      $("#section4").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#four").offset().top
+            }, 1000);               
+        });
+    });
+
+    $(document).ready(function (){
+      $("#section5").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#five").offset().top
+            }, 1000);               
+        });
+    });
+
+    $(document).ready(function (){
+      $("#section6").on('click',function(){                
+             $('html, body').animate({
+                  scrollTop: $("#six").offset().top
+            }, 1000);               
+        });
+    });
+    
+// makes the parallax elements
+function parallaxIt() {
+  // create variables
+  var $fwindow = $(window);
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  var $contents = [];
+  var $backgrounds = [];
+
+  // for each of content parallax element
+  $('[data-type="content"]').each(function(index, e) {
+    var $contentObj = $(this);
+
+    $contentObj.__speed = ($contentObj.data('speed') || 1);
+    $contentObj.__fgOffset = $contentObj.offset().top;
+    $contents.push($contentObj);
   });
-});
+
+  // for each of background parallax element
+  $('[data-type="background"]').each(function() {
+    var $backgroundObj = $(this);
+
+    $backgroundObj.__speed = ($backgroundObj.data('speed') || 1);
+    $backgroundObj.__fgOffset = $backgroundObj.offset().top;
+    $backgrounds.push($backgroundObj);
+  });
+
+  // update positions
+  $fwindow.on('scroll resize', function() {
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    $contents.forEach(function($contentObj) {
+      var yPos = $contentObj.__fgOffset - scrollTop / $contentObj.__speed;
+
+      $contentObj.css('top', yPos);
+    })
+
+    $backgrounds.forEach(function($backgroundObj) {
+      var yPos = -((scrollTop - $backgroundObj.__fgOffset) / $backgroundObj.__speed);
+
+      $backgroundObj.css({
+        backgroundPosition: '50% ' + yPos + 'px'
+      });
+    });
+  });
+
+  // triggers winodw scroll for refresh
+  $fwindow.trigger('scroll');
+};
+
+parallaxIt();
+
     </script>
    </body>
 </html>
