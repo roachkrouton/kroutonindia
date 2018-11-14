@@ -464,7 +464,9 @@ z-index: 1;
   flex-wrap: nowrap;
   height: 100%;
   justify-content: space-around;
-  position: relative;
+  position: relative;36
+  53
+  22.
   width: 100%;
 }
 .container-fluid section {
@@ -472,7 +474,7 @@ z-index: 1;
   height: 100vh;
   flex: 1;
   display: flex;
-  text-align: center;
+  /*text-align: center;*/
   position: relative;
   overflow: hidden;
   background-color: #000;
@@ -505,33 +507,37 @@ z-index: 1;
   z-index: 500;
   opacity: 0.4;
 }
+
+/*.stuff{
+    background-color: black;
+    opacity: 0.3;
+}*/
 .container-fluid section .stuff {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100%;
-  width: 100%;
-  max-width: 70%;
-  justify-content: center;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  height: 65%;
+  width: 50%;
   z-index: 1000;
-  /*color: #e67e22;*/
-  color:#FF4500;
-  margin: 0 auto;
-  font-size: 26px;
   position: relative;
+  top:30%;
+  font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+  color: #fff;
+  padding: 20px;
 }
+
+.para{
+    line-height: 30px;
+}
+
+
 .container-fluid section .stuff h2 {
   margin: 0px;
 }
-.container-fluid section .stuff:before, .container-fluid section .stuff:after {
-  width: 100%;
-  height: 1px;
-  display: block;
-  background-color: #d35400;
-  content: "";
-  margin: 30px 0;
-}
+
 .at-twitter {
   position: fixed;
   right: 20px;
@@ -573,6 +579,7 @@ a:hover, a:focus {
     font-size: 15px;
     border-radius: 20px;
 }
+
 
 
 /*Parallax Page css end*/
@@ -621,6 +628,67 @@ a:hover, a:focus {
     margin: 20px -56px;
     border-radius: 100px;
     
+}
+
+/*for button*/
+/*@import url(https://fonts.googleapis.com/css?family=BenchNine:700);*/
+.sec_button {
+  left:50%;
+  background-color: #993CF3;
+  border: none;
+  color: #ffffff;
+  width:140px;
+  height: 50px;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sec_button:before,
+.sec_button:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.sec_button:before {
+  border-color: #993CF3;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.sec_button:focus{
+    border-color:#993CF3;
+}
+
+.sec_button:after {
+  border-bottom-width: 2px;
+  border-color: #993CF3;
+  bottom: -5px;
+  right: 0px;
+}
+
+.sec_button:hover,
+.sec_button.hover {
+  background-color: #993CF3;
+}
+
+.sec_button:hover:before,
+.sec_button.hover:before,
+.sec_button:hover:after,
+.sec_button.hover:after {
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -684,32 +752,44 @@ a:hover, a:focus {
         <div class="container-fluid">
   <section id="one">
     <div class="image" data-type="background" data-speed="2"></div>
-    <div class="stuff" data-type="content"><h1>SECTION ONE</h1><h2>SEM</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="two">
     <div class="image" data-type="background" data-speed="7"></div>
-    <div class="stuff" data-type="content"><h1>SECTION TWO</h1><h2>SEO</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="three">
     <div class="image" data-type="background" data-speed="6"></div>
-    <div class="stuff" data-type="content"><h1>SECTION THREE</h1><h2>CONTENT MARKETING</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="four">
     <div class="image" data-type="background" data-speed="5"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FOUR</h1><h2>SOCIAL MEDIA MARKETING</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="five">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION FIVE</h1><h2>COMING SOON...</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 
   <section id="six">
     <div class="image" data-type="background" data-speed="3"></div>
-    <div class="stuff" data-type="content"><h1>SECTION SIX</h1><h2>COMING SOON...</h2></div>
+    <div class="stuff" data-type="content"><h1>Digital Marketing</h1><br/><p class="para">Krouton needed to optimize the software components of its flagship EVO to maximize existing hardware. Mercury Development came up with the unique solution.</p><br />
+        <button class="sec_button">Learn More</button>
+    </div>
   </section>
 </div>
      </section>
