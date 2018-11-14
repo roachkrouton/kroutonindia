@@ -586,9 +586,48 @@ a:hover, a:focus {
 }
 .request-title h1{
   margin-bottom: 30px;
+  color: #ffffff;
+}
+.request-field{
+  font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #bfbfbf;
+    border: 6px solid #4d5457;
+    background-color: #4d5457;
+    margin-bottom: 0;
+    padding: 12px;
+}
+.request-msgfield{
+  font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: #bfbfbf;
+    border: 6px solid #4d5457;
+    background-color: #4d5457;
+    margin-bottom: 0;
+    padding: 12px;
+    margin-top: 50px;
+        width: 57%;
+        height: 150px;
+}
+.request-button{
+     width: auto!important;
+    min-height: 48px;
+    padding: 0px 27px !important;
+    background-color: #004e98;
+    color: #ffffff;
+    border: 1px #32343b;
+    margin: 20px -56px;
+    border-radius: 100px;
+    
 }
 
 
+.eff:hover {
+  background-color: #4CAF50;
+  color: white;
+}
 </style>
 </head>
 
@@ -768,24 +807,29 @@ a:hover, a:focus {
       <section class="request-section" >
      <div class="container">
   <div class="row">
-    <div class="span6">
+   <div class="col-md-12 col-md-offset-3">
       <div class="request-title">
         <h1>REQUEST ESTIMATE</h1>
       </div>
-            <form>
-              
-                    <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
-                    <input id="email" name="email" type="email" class="span3" placeholder="Email address">
-                </div>
-                <div class="controls">
-                    <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"></textarea>
-                </div>
-                  
-                <div class="controls">
-                    <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right">Send</button>
-               
-            </form>
-        </div>
+      <div class="col-md-3">
+
+       <input class="request-field" type="text" name="name" placeholder="Name">
+      </div>
+      <div class="col-md-3">
+          <input class="request-field" type="text" name="name" placeholder="Name">
+      </div>
+        <div class="col-md-9">
+          <textarea class="request-msgfield" placeholder="Project Details" ></textarea>
+      </div>
+       <div class="col-md-4 m-top-20">
+         <a class="request-left" href="mailto:sales@kroutonindia.com">sales@kroutonindia.com</a>
+         <p>+1 305 767 2434</p>
+      </div>
+        <div class="col-md-4">
+         <button class="request-button eff" >Send Request</button>
+      </div>
+
+         </div>   
   </div>
 </div>
       </section>
