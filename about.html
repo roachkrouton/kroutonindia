@@ -367,6 +367,60 @@ color: #fff;
 /*About us Parallax body css*/
 /*--------------------------*/
 
+
+
+/*-----------------------*/
+/*---Start Counter CSS --*/
+/*-----------------------*/
+
+.col-md-4 {
+  text-align: center;
+  padding-bottom: 50px;
+  border-right: 1px dashed black;
+}
+
+.col-md-4:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 4s;
+  animation-delay: 0s;
+  text-align: center;
+}
+
+ .counter_name{
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+  
+  .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
+}
+
+.counterimg{
+  height: 150px;
+  width: 200px;
+  padding: 10px 0px;
+  display: block;
+  margin:auto;
+}
+
+.counterclass{
+  background-color: black;
+}
+/*-----------------------*/
+/*---Counter CSS Ends----*/
+/*----------------------*/
+
 </style>
 </head>
 
@@ -598,14 +652,47 @@ color: #fff;
     </div>
 </div>
 
-
-<!-- 
-<div class="container-fluid" style="height: 200px;background-color: black;">
-  
-</div> -->
 <!-- --------------------------- -->
 <!-- About us parallax body ends -->
 <!-- --------------------------- -->
+
+<!-- --------------------------- -->
+<!-- Start Counter -->
+<!-- --------------------------- -->
+
+<div class="container-fluid" class="counterclass">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
+      <img src="assets/customer.svg" class="counterimg">
+      <h1 class="counter">2,523</h1>
+      <h3 class="counter_name">Customers</h3>
+    </div> 
+
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+      <img src="assets/webpage.svg" class="counterimg">
+      <h1 class="counter">63,075</h1>
+      <h3 class="counter_name">Total Web Pages</h3>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+      <img src="assets/project.png" class="counterimg">
+      <h1 class="counter">12,218</h1>
+      <h3 class="counter_name">Total Projects</h3>
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+      <img src="assets/project.png" class="counterimg">
+      <h1 class="counter">12,218</h1>
+      <h3 class="counter_name">Total Projects</h3>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ------------------------------ -->
+<!-- Counter ends here ----->
+<!-- --------------------------------->
 
 
 <!-- ------------------------------ -->
@@ -879,6 +966,17 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
+
+
+// start script for counter
+$('.counter').counterUp({
+  delay: 10,
+  time: 2000
+});
+$('.counter').addClass('animated fadeInDownBig');
+$('h3').addClass('animated fadeIn');
+// end script for counter
+
 </script>
 
 <!-- ------------------------ -->
