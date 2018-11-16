@@ -276,8 +276,10 @@ color: #fff;
 /*--------------------------*/
 /*About us Parallax body css*/
 /*--------------------------*/
-/*  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-@import url(https://fonts.googleapis.com/css?family=Cardo);*/
+
+@media only screen (max-width: 386){
+
+}
 .snip1501 {
   font-family: 'Josefin Sans', sans-serif;
   position: relative;
@@ -373,50 +375,93 @@ color: #fff;
 /*---Start Counter CSS --*/
 /*-----------------------*/
 
-.col-md-4 {
-  text-align: center;
-  padding-bottom: 50px;
-  border-right: 1px dashed black;
+.wrapper{
+  background-image: linear-gradient(#FFF6B7, #F6416C);  
+    /*background: linear-gradient(to right, #f7f8f8, #acbb78);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*clear: both;*/
 }
 
-.col-md-4:last-child {
-  border-right: 0px solid black;
+.counter{
+  /*background-color: yellow;*/
+  background-image: linear-gradient(#FFF6B7, #F6416C);
+    /*background: linear-gradient(to right, #f7f8f8, #acbb78);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding:25px;
+ text-align: center;
+ border-right: 1px dotted black ;
+ /*outline:dotted;*/
 }
+
+.counter img{
+  height: 80px;
+  width:100px;
+}
+
+.counter h2, p{
+  padding: 20px;
+
+}
+.color{
+  color: #000066;
+}
+
+.wrapper .row .counter h2{
+  color: #000066;
+}
+
+/*.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
 
 .counter {
-  animation-duration: 4s;
-  animation-delay: 0s;
-  text-align: center;
-}
+ background-color: #ffffff;
+ padding: 20px 0;
+ border-radius: 5px;
 
- .counter_name{
-  text-align: center;
-}
+ }
 
-@media (max-width: 991px) {
-  .col-md-4 {
-    border-right: 0px dashed black;
-    border-bottom: 1px dashed black;
-    width: 50%;
-    margin: auto auto;
+.count-title {
+ font-size: 40px;
+  font-weight: normal;
+    margin-top: 10px;
+     margin-bottom: 0;
+      text-align: center;
+       }
+
+.count-text {
+ font-size: 13px;
+ font-weight: normal;
+ margin-top: 10px;
+ margin-bottom: 0;
+ text-align: center;
   }
-  
-  .col-md-4:last-child {
-    border-bottom: 0px dashed black;
-  }
-}
 
-.counterimg{
-  height: 150px;
-  width: 200px;
-  padding: 10px 0px;
-  display: block;
-  margin:auto;
+.fa-2x { 
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
 }
-
-.counterclass{
-  background-color: black;
-}
+*/
 /*-----------------------*/
 /*---Counter CSS Ends----*/
 /*----------------------*/
@@ -479,12 +524,12 @@ color: #fff;
 
 <nav>
   <ul>
-    <li><a href="#">Forside</a></li>
-    <li><a href="#">Vejr</a></li>
-    <li><a href="#">Tilmelding</a></li>
-    <li><a href="#">Galleri</a></li>
-    <li><a href="#">Sponsorer</a></li>
-    <li><a href="#">kontakt</a></li>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    <li><a href="#">Three</a></li>
+    <li><a href="#">Four</a></li>
+    <li><a href="#">Five</a></li>
+    <li><a href="#">Six</a></li>
   </ul>
 </nav>
 
@@ -494,7 +539,7 @@ color: #fff;
 <div class="container-fluid" class="row" style="padding:0px; margin:0px;">
   <div class="col-md-12" style="padding:0px; margin:0px;">
 
-     <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -505,7 +550,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;"> 
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
       <figcaption>
@@ -516,7 +561,7 @@ color: #fff;
     </figure>
      </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -527,7 +572,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;" >
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
       <figcaption>
@@ -538,7 +583,7 @@ color: #fff;
     </figure>
   </div>
 
-  <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+  <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -549,7 +594,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -560,7 +605,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -571,7 +616,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -582,7 +627,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -593,7 +638,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
       <figcaption>
@@ -604,7 +649,7 @@ color: #fff;
     </figure>
     </div>
 
-    <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
       <figcaption>
@@ -615,7 +660,7 @@ color: #fff;
     </figure>
      </div>
 
-     <div class="col-md-3 col-sm-4 col-xs-6" style="padding:0px; margin:0px;">
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
       <figcaption>
@@ -626,7 +671,13 @@ color: #fff;
     </figure>
      </div>
 
-     <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0px; margin:0px;">
+    </div>
+  </div>
+
+  <div class="container-fluid" class="row" style="padding:0px; margin:0px;">
+  <div class="col-md-12" style="padding:0px; margin:0px;">
+
+     <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;">
       <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
       <figcaption>
@@ -637,9 +688,7 @@ color: #fff;
     </figure>
      </div>
 
-    
-
-    <div class="col-md-6 col-sm-6 col-xs-6" style="padding:0px; margin:0px;">
+    <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
     <figure class="snip1501" style="padding:0px; margin:0px;" >
       <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
       <figcaption>
@@ -649,8 +698,9 @@ color: #fff;
       <a href="#"></a>
     </figure>
   </div>
-    </div>
 </div>
+</div>
+    
 
 <!-- --------------------------- -->
 <!-- About us parallax body ends -->
@@ -660,32 +710,34 @@ color: #fff;
 <!-- Start Counter -->
 <!-- --------------------------- -->
 
-<div class="container-fluid" class="counterclass">
-  <div class="row">
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6" >
-      <img src="assets/customer.svg" class="counterimg">
-      <h1 class="counter">2,523</h1>
-      <h3 class="counter_name">Customers</h3>
-    </div> 
+<!-- <h1>JQUERY NUMBER ANIMATION</h1>
+<h3>jQuery counter to count up to a target number</h3> -->
 
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-      <img src="assets/webpage.svg" class="counterimg">
-      <h1 class="counter">63,075</h1>
-      <h3 class="counter_name">Total Web Pages</h3>
+<div class="wrapper">
+    <div class="row" class="conterbody">
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+       <h4 class="color">PROJECTS</h4>
+    </div>
+.
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-      <img src="assets/project.png" class="counterimg">
-      <h1 class="counter">12,218</h1>
-      <h3 class="counter_name">Total Projects</h3>
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
     </div>
 
-    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-      <img src="assets/project.png" class="counterimg">
-      <h1 class="counter">12,218</h1>
-      <h3 class="counter_name">Total Projects</h3>
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
     </div>
-
   </div>
 </div>
 
@@ -790,7 +842,106 @@ color: #fff;
 
 
 
+<script type="text/javascript">
+    (function ($) {
+  $.fn.countTo = function (options) {
+    options = options || {};
+    
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+      
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+      
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+      
+      $self.data('countTo', data);
+      
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+      
+      // initialize the element with the starting value
+      render(value);
+      
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        
+        render(value);
+        
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+        
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+          
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+      
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+  
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
 
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options);
+  }
+});
+  </script>
 
  
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
@@ -968,14 +1119,7 @@ $(".hover").mouseleave(
 );
 
 
-// start script for counter
-$('.counter').counterUp({
-  delay: 10,
-  time: 2000
-});
-$('.counter').addClass('animated fadeInDownBig');
-$('h3').addClass('animated fadeIn');
-// end script for counter
+
 
 </script>
 

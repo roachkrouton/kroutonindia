@@ -1,699 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Home - Krouton software solutions Pvt Ltd</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <head>
-         <link rel="icon" type="image/png" href="favicon.png">
-         <!-- Google fonts links-->
-         <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Heebo:100,300,400,500,700,800,900|Nunito" rel="stylesheet">
-         <!--For Plugins external css-->
-         <link rel="stylesheet" href="styles/plugins.css">
-       
-         <link rel="stylesheet" href="styles/bootstrap-touch-slider.css">
-         <!--Theme custom css -->
-         <link rel="stylesheet" href="styles/style.css">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-         <!--<link rel="stylesheet" href="assets/css/colors/blue.css">-->
-         <!--Theme Responsive css-->
-         <link rel="stylesheet" href="styles/responsive.css" />
-         <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
 
-<style type="text/css">  
+    <img src="assets/bulb.jpg">
+    <canvas id="myCanvas" width="900" height="1800"></canvas>
+     <!-- <canvas id="myCanvas" width=100% height=100%></canvas> -->
+    <script>
 
-/*-----------------------------------*/
-  /*start About us top animation css*/
-/*-----------------------------------*/
+      var width = screen.width; //screen width
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
 
+      context.beginPath();
+      context.moveTo(width/2-50, 100);
+      context.lineTo(width/2+50, 100);
+      context.lineWidth = 5;
+      context.stroke();
 
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Lato', sans-serif;
-}
-.hero {
-  width: 100%;
-  min-height: 450px;
-  position: relative;
-  top: 0;
-  left: 0;
-  background-color: #d9edfd;
-}
-.layer-1 {
-  animation: parallax_fg linear 20s infinite both;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 136px;
-}
-.layer-2 {
-  animation: parallax_fg linear 30s infinite both;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/2.png) 0 100% repeat-x;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 145px;
-}
-.layer-3 {
-  animation: parallax_fg linear 55s infinite both;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/3.png) 0 100% repeat-x;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 158px;
-}
-.layer-4 {
-  animation: parallax_fg linear 75s infinite both;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/4.png) 0 100% repeat-x;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 468px;
-}
-.layer-5 {
-  animation: parallax_fg linear 95s infinite both;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/5.png) 0 100% repeat-x;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 311px;
-}
-.layer-6 {
-  animation: parallax_fg linear 120s infinite both;
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/6.png) 0 100% repeat-x;
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 222px;
-}
-.bike-1, .bike-2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/bike.png) 0 100% no-repeat;
-  z-index: 1;
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: auto 75px;
-}
-.bike-1 {
-  animation: parallax_bike linear 10s infinite both;
-}
-.bike-2 {
-  animation: parallax_bike linear 15s infinite both;
-}
-@keyframes parallax_fg {
-  0% {
-    background-position: 2765px 100%;
-  }
-  100% {
-    background-position: 550px 100%;
-  }
-}
-@keyframes parallax_bike {
-  0% {
-    background-position: -300px 100%;
-  }
-  100% {
-    background-position: 2000px 100%;
-  }
-}
-.logo {
-  margin: 70px auto;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-}
-.logo img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-}
-@media (max-width: 700px) {
-  .logo img {
-    max-width: 90%;
-  }
-}
-nav {
-  background-color: #12212f;
-  overflow: hidden;
-}
-nav ul {
-  list-style: none;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-nav li {
-  padding: 10px 20px;
-}
-@media (max-width: 700px) {
-  nav li {
-    width: 50%;
-    text-align: center;
-  }
-}
-nav a {
-  /* Tilmelding: */
-  font-weight: 700;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
+      context.beginPath();
+      context.moveTo(width/2, 100);
+      context.lineTo(width/2, 200);
+      context.lineWidth = 5;
+      context.stroke();      
+     
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(width/2, 250, 50, 0, 2 * Math.PI);
+      ctx.stroke();
 
+      context.beginPath();
+      context.moveTo(width/2, 300);
+      context.lineTo(width/2, 400);
+      context.lineWidth = 5;
+      context.stroke();
 
-.extra {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 18px;
-  color: #12202f;
-  letter-spacing: 0px;
-  line-height: 27px;
-}
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(width/2, 410, 10, 0, 2 * Math.PI);
+      ctx.stroke();
 
-/*--------------------*/
-/*End about us animation css*/
-/*--------------------*/
+      context.beginPath();
+      context.moveTo(width/2-150, 410);
+      context.lineTo(width/2-10, 410);
+      context.lineWidth = 5;
+      context.stroke();
 
+      context.beginPath();
+      context.moveTo(width/2, 420);
+      context.lineTo(width/2, 500);
+      context.lineWidth = 5;
+      context.stroke();
 
-html, body {
-max-width: 100%;
-overflow-x: hidden;
-}
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(width/2, 550, 50, 0, 2 * Math.PI);
+      ctx.stroke();
 
-.footer-info{
-width: 100%;
-margin: 0px 30px;
-display: inline-flex;
-}
-.footer-info1{
-width: 35%;
-}
-.footer-info2{
-width: 45%;
-}
-.footer-info3{
-width: 20%;
-....
-}
-.copyright-links li {
-display: inline;
-}
-.copyright-links li a {
-color: #797979;
-}
+     
+      context.beginPath();
+      context.moveTo(width/2, 600);
+      context.lineTo(width/2, 700);
+      context.lineWidth = 5;
+      context.stroke(); 
+     
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(width/2, 710, 10, 0, 2 * Math.PI);
+      ctx.stroke();
 
-.footerlogo-title{
-font-size: 30px;
-font-weight: 700;
-line-height: 1rem;
-text-transform: uppercase;
-color: #ffffff;
-}
+      context.beginPath();
+      context.moveTo(width/2, 720);
+      context.lineTo(width/2, 810);
+      context.lineWidth = 5;
+      context.stroke();
 
-.points{
-width: 23px;
-height: 23px;
-}
+      context.beginPath();
+      context.moveTo(width/2+10, 710);
+      context.lineTo(width/2+160, 710);
+      context.lineWidth = 5;
+      context.stroke();
 
-.particles-js-canvas-el{
-height: 500px !important;
-}
-
-#aa_particles{
-background: #000000;
-}
-
-/*Tab Menu*/
-#navbar-menu1{
-background-color:#000000;
-padding: 3px;
-padding: 10px 20px;
-color: #fff;
-/*#DDDAF9*/
-}
-
-#navbar-menu1{
- width: 100%; overflow: hidden;
-}
-
-#navbar-menu1 ul{
- list-style: none; position: relative; float: left; display: block; left: 50%;
-}
-
-#navbar-menu1 ul li {
- position: relative; float: left; display: block; right: 50%;
-}
-
-/*--------------------------*/
-/*About us Parallax body css*/
-/*--------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-/*html, body {
-  overflow: hidden;
-}*/
-
-.background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  height: 130vh;
-  position: fixed;
-  width: 100%;
-  -webkit-transform: translateY(30vh);
-          transform: translateY(30vh);
-  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
-}
-
-/*.background:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-*/
-.background:first-child {
-  background-image: url(https://i.postimg.cc/kXq9Qmnj/bgd1.jpg);
-  -webkit-transform: translateY(-15vh);
-          transform: translateY(-15vh);
-}
-
-.background:first-child .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
-}
-
-.background:nth-child(2) {
-  background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
-}
-
-.background:nth-child(3) {
-  background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
-}
-
-/* Set stacking context of slides */
-.background:nth-child(1) {
-  z-index: 3;
-}
-
-.background:nth-child(2) {
-  z-index: 2;
-}
-
-.background:nth-child(3) {
-  z-index: 1;
-}
-
-.content-wrapper {
-  /*height: 100vh;*/
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: column nowrap;
-  color: #fff;
-  font-family: Montserrat;
-  text-transform: uppercase;
-  -webkit-transform: translateY(40vh);
-          transform: translateY(40vh);
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
-}
-
-.content-title {
-  font-size: 12vh;
-  line-height: 1.4;
-}
-
-.background.up-scroll {
-  -webkit-transform: translate3d(0, -15vh, 0);
-          transform: translate3d(0, -15vh, 0);
-}
-
-.background.up-scroll .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
-}
-
-.background.up-scroll + .background {
-  -webkit-transform: translate3d(0, 30vh, 0);
-          transform: translate3d(0, 30vh, 0);
-}
-
-.background.up-scroll + .background .content-wrapper {
-  -webkit-transform: translateY(30vh);
-          transform: translateY(30vh);
-}
-
-.background.down-scroll {
-  -webkit-transform: translate3d(0, -130vh, 0);
-          transform: translate3d(0, -130vh, 0);
-}
-
-.background.down-scroll .content-wrapper {
-  -webkit-transform: translateY(40vh);
-          transform: translateY(40vh);
-}
-
-.background.down-scroll + .background:not(.down-scroll) {
-  -webkit-transform: translate3d(0, -15vh, 0);
-          transform: translate3d(0, -15vh, 0);
-}
-
-.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
-  -webkit-transform: translateY(15vh);
-          transform: translateY(15vh);
-}
-
-
-
-/*--------------------------*/
-/*About us Parallax body css*/
-/*--------------------------*/
-
-</style>
-</head>
-
-<body data-spy="scroll" data-target=".navbar-collapse" >
-      <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="container">
-                  <div class="row">
-                     <!-- Start Header Navigation -->
-                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="#brand"><img style="width: 150px; height: 90px;" src="assets/krouton_logo.png" class="logo logo-display" alt=""></a>
-                        <a class="navbar-brand" href="#brand"><img style="width: 140px; height: 73px;" src="assets/krouton_logo.png" class="logo logo-scrolled" alt=""></a>
-                     </div>
-                     <!-- End Header Navigation -->
-                     <!-- Collect the nav links, forms, and other content for toggling -->
-                     <div class="collapse navbar-collapse" id="navbar-menu">
-                        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
-                           <li><a href="#home">Home</a> </li>
-                           <li><a href="#banner_img">About Us</a></li>
-                           <li><a href="#service">Service</a></li>
-                        </ul>
-                     </div>
-                     <!-- /.navbar-collapse -->
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- Start Side Menu -->
-         <!-- End Side Menu -->
-      </nav>
-
-  
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(width/2, 860, 50, 0, 2 * Math.PI);
+      ctx.stroke();
       
-<!-- ----------------------------------------------------------- -->
-        <!-- start about us contents -->
-<!-- ----------------------------------------------------------->
+      
 
-      <div class="hero">
-  
-  <div class="parallax-layer layer-6"></div>
-  <div class="parallax-layer layer-5"></div>
-  <div class="parallax-layer layer-4"></div>
-  <div class="parallax-layer bike-1"></div>
-  <div class="parallax-layer bike-2"></div>
-  <div class="parallax-layer layer-3"></div>
-  <div class="parallax-layer layer-2"></div>
-  <div class="parallax-layer layer-1"></div>
-  <div class="logo">
-    <img src="#" alt=""  />
-  </div>
-</div>
-
-<nav>
-  <ul>
-    <li><a href="#">Forside</a></li>
-    <li><a href="#">Vejr</a></li>
-    <li><a href="#">Tilmelding</a></li>
-    <li><a href="#">Galleri</a></li>
-    <li><a href="#">Sponsorer</a></li>
-    <li><a href="#">kontakt</a></li>
-  </ul>
-</nav>
-
-<!-- ---------------------------- -->
-<!-- About us parallax body start -->
-<!-- ---------------------------- -->
-<div class="container-fluid">
-  <section class="background">
-    <div class="content-wrapper">
-      <p class="content-title">Full Page Parallax Effect</p>
-      <p class="content-subtitle">Scroll down and up to see the effect!</p>
-    </div>
-  </section>
-  <section class="background">
-    <div class="content-wrapper">
-      <p class="content-title">Cras lacinia non eros nec semper.</p>
-      <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
-    </div>
-  </section>
-  <section class="background">
-    <div class="content-wrapper">
-      <p class="content-title">Etiam consequat lectus.</p>
-      <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
-    </div>
-  </section>
-</div>
-
-<!-- --------------------------- -->
-<!-- About us parallax body ends -->
-<!-- --------------------------- -->
-
-
-<!-- ------------------------------ -->
-<!-- About us contents ends here ----->
-<!-- --------------------------------->
-
-
-
-
-
-   <section id="aa_particles" >
-         <div class="container" style="position: absolute; margin: 0px 100px;">
-            <div class="row">
-               <div class="col-md-12 col-md-offset-5">
-                  <img class="footer-logo text-center" src="assets/footerlogo.png">
-               </div>
-               <div class="col-md-12 footer-columns">
-                  <div class="col-md-3 no-padding">
-                     <div class="weidgetv2-item sm-m-top-40">
-                        <h4 class="text-white">Our Company</h4>
-                        <ul class="m-top-30">
-                           <li><img class="points" src="assets/points.png"><a href="#"> Our Blog</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#"> Customers</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#"> Newsroom</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">We're Hiring</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">White Papers</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 no-padding">
-                     <div class="weidgetv2-item sm-m-top-40">
-                        <h4 class="text-white">Our Services</h4>
-                        <ul class="m-top-30">
-                           <li><img class="points" src="assets/points.png"><a href="#">Full Stack Development</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">Mobility</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">eCommerce</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">IoT</a></li>
-                           <li><img class="points" src="assets/points.png"><a href="#">Cloud Solutions</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 no-padding">
-                     <div class="weidgetv2-item sm-m-top-40">
-                        <h4 class="text-white">IoT</h4>
-                        <ul class="m-top-30">
-                           <li><a href="#"> Home</a></li>
-                           <li><a href="#"> About Us</a></li>
-                           <li><a href="#"> Contact Us</a></li>
-                           <li><a href="#"> Portfolio</a></li>
-                           <li><a href="#"> Blog</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-3 no-padding">
-                     <h4 class="text-white">Our Location</h4>
-                     <h5 class="m-top-20 text-white" style="font-weight: 16px;">ANNA NAGAR</h5>
-                     <p class="m-top-20"><img class="points" src="assets/office.png"> 1/1A, UR Nagar, Anna Nagar West Extn, Chennai, Tamil Nadu 600101.</p>
-                     <p class="m-top-20"> <img class="points" src="assets/phone.png"> <a href="#">&nbsp;095001 21077</a></p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="social">
-                     <a href="#" class="social__button mail"><i class="fa fa-envelope-o"></i></a>
-                     <a href="#" class="social__button facebook"><i class="fa fa-facebook"></i></a>
-                     <a href="#" class="social__button linkedin"><i class="fa fa-linkedin"></i></a>
-                     <a href="#" class="social__button github"><i class="fa fa-github"></i></a>
-                     <a href="#" class="social__button codepen"><i class="fa fa-codepen"></i></a>
-                  </div>
-               </div>
-            </div>
-            <!-- <div class="divider"></div> -->
-         </div>
-      </section>
-
-       
-
-
-
-
- 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
-
-
-    <!-- // ------------------------------ -->
-   <!-- // About us body parallax script -->
-  <!-- // ------------------------------ -->
-<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script><script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-<script >// ------------- VARIABLES ------------- //
-var ticking = false;
-var isFirefox = /Firefox/i.test(navigator.userAgent);
-var isIe = /MSIE/i.test(navigator.userAgent) || /Trident.*rv\:11\./i.test(navigator.userAgent);
-var scrollSensitivitySetting = 30; //Increase/decrease this number to change sensitivity to trackpad gestures (up = less sensitive; down = more sensitive) 
-var slideDurationSetting = 600; //Amount of time for which slide is "locked"
-var currentSlideNumber = 0;
-var totalSlideNumber = $(".background").length;
-
-// ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
-function parallaxScroll(evt) {
-  if (isFirefox) {
-    //Set delta for Firefox
-    delta = evt.detail * -120;
-  } else if (isIe) {
-    //Set delta for IE
-    delta = -evt.deltaY;
-  } else {
-    //Set delta for all other browsers
-    delta = evt.wheelDelta;
-  }
-
-  if (ticking != true) {
-    if (delta <= -scrollSensitivitySetting) {
-      //Down scroll
-      ticking = true;
-      if (currentSlideNumber !== totalSlideNumber - 1) {
-        currentSlideNumber++;
-        nextItem();
-      }
-      slideDurationTimeout(slideDurationSetting);
-    }
-    if (delta >= scrollSensitivitySetting) {
-      //Up scroll
-      ticking = true;
-      if (currentSlideNumber !== 0) {
-        currentSlideNumber--;
-      }
-      previousItem();
-      slideDurationTimeout(slideDurationSetting);
-    }
-  }
-}
-
-// ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
-function slideDurationTimeout(slideDuration) {
-  setTimeout(function () {
-    ticking = false;
-  }, slideDuration);
-}
-
-// ------------- ADD EVENT LISTENER ------------- //
-var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
-window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
-
-// ------------- SLIDE MOTION ------------- //
-function nextItem() {
-  var $previousSlide = $(".background").eq(currentSlideNumber - 1);
-  $previousSlide.removeClass("up-scroll").addClass("down-scroll");
-}
-
-function previousItem() {
-  var $currentSlide = $(".background").eq(currentSlideNumber);
-  $currentSlide.removeClass("down-scroll").addClass("up-scroll");
-}
-//# sourceURL=pen.js
-</script>
-
-  // ------------------------------
-   // End About us body parallax script
-   // -------------------------------------
-
-
-      </script>
-      <!-- JS includes -->
-      <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
-      <script src="scripts/vendor/bootstrap.js"></script>
-      <script src="scripts/bootsnav.js"></script>
-
-
-<!-- ---------------------------------------- -->
-<!-- start of About us(top animation ) script -->
-<!-- ------------------------------ ------------>
-
-
-
-<script>
-WebFontConfig = {
-    google: { families: [ 'Lato:400,300,300italic,400italic,700,700italic,900,900italic:latin' ] }
-  };
-
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); 
-</script>
-
-<!-- ------------------------ -->
-<!-- About us script end here -->
-<!-- ------------------------ -->
-       
-   </body>
-</html>
+      
+      
+    </script>
+  </body>
+</html>     
