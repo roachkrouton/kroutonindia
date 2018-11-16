@@ -10,8 +10,12 @@
   </head>
   <body>
 
-    <img src="assets/bulb.jpg">
-    <canvas id="myCanvas" width="900" height="1800"></canvas>
+  <!--   <img src="assets/bulb.jpg"> -->
+    
+    <canvas id="myCanvas" width="900" height="1800">
+    <div id="viewport"></div>
+
+    </canvas>
      <!-- <canvas id="myCanvas" width=100% height=100%></canvas> -->
     <script>
 
@@ -97,6 +101,19 @@
       ctx.beginPath();
       ctx.arc(width/2, 860, 50, 0, 2 * Math.PI);
       ctx.stroke();
+
+      var canvas = document.getElementById('viewport'),
+      context = canvas.getContext('2d');
+
+      make_base();
+      function make_base()
+      {
+        base_image = new Image();
+        base_image.src = 'assets/cloud.jpg';
+        base_image.onload = function(){
+        context.drawImage(base_image, 0, 0);
+      }
+}
       
       
 
