@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Home - Krouton software solutions Pvt Ltd</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <head>
+         <link rel="icon" type="image/png" href="favicon.png">
+         <!-- Google fonts links-->
+         <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Heebo:100,300,400,500,700,800,900|Nunito" rel="stylesheet">
+         <!--For Plugins external css-->
+         <link rel="stylesheet" href="styles/plugins.css">
+       
+         <link rel="stylesheet" href="styles/bootstrap-touch-slider.css">
+         <!--Theme custom css -->
+         <link rel="stylesheet" href="styles/style.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+         <!--<link rel="stylesheet" href="assets/css/colors/blue.css">-->
+         <!--Theme Responsive css-->
+         <link rel="stylesheet" href="styles/responsive.css" />
+         <script src="scripts/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+         
+
+<style type="text/css">  
+
+/*-----------------------------------*/
+  /*start About us top animation css*/
+/*-----------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.hero {
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #d9edfd;
+}
+.layer-1 {
+  animation: parallax_fg linear 20s infinite both;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 136px;
+}
+.layer-2 {
+  animation: parallax_fg linear 30s infinite both;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/2.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 145px;
+}
+.layer-3 {
+  animation: parallax_fg linear 55s infinite both;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/3.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 158px;
+}
+.layer-4 {
+  animation: parallax_fg linear 75s infinite both;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/4.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 468px;
+}
+.layer-5 {
+  animation: parallax_fg linear 95s infinite both;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/5.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 311px;
+}
+.layer-6 {
+  animation: parallax_fg linear 120s infinite both;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/6.png) 0 100% repeat-x;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 222px;
+}
+.bike-1, .bike-2 {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/24650/bike.png) 0 100% no-repeat;
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: auto 75px;
+}
+.bike-1 {
+  animation: parallax_bike linear 10s infinite both;
+}
+.bike-2 {
+  animation: parallax_bike linear 15s infinite both;
+}
+@keyframes parallax_fg {
+  0% {
+    background-position: 2765px 100%;
+  }
+  100% {
+    background-position: 550px 100%;
+  }
+}
+@keyframes parallax_bike {
+  0% {
+    background-position: -300px 100%;
+  }
+  100% {
+    background-position: 2000px 100%;
+  }
+}
+.logo {
+  margin: 70px auto;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  .logo img {
+    max-width: 90%;
+  }
+}
+nav {
+  background-color: #12212f;
+  overflow: hidden;
+}
+nav ul {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav li {
+  padding: 10px 20px;
+}
+@media (max-width: 700px) {
+  nav li {
+    width: 50%;
+    text-align: center;
+  }
+}
+nav a {
+  /* Tilmelding: */
+  font-weight: 700;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.extra {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #12202f;
+  letter-spacing: 0px;
+  line-height: 27px;
+}
+
+/*--------------------*/
+/*End about us animation css*/
+/*--------------------*/
+
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+.footer-info{
+width: 100%;
+margin: 0px 30px;
+display: inline-flex;
+}
+.footer-info1{
+width: 35%;
+}
+.footer-info2{
+width: 45%;
+}
+.footer-info3{
+width: 20%;
+....
+}
+.copyright-links li {
+display: inline;
+}
+.copyright-links li a {
+color: #797979;
+}
+
+.footerlogo-title{
+font-size: 30px;
+font-weight: 700;
+line-height: 1rem;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.points{
+width: 23px;
+height: 23px;
+}
+
+.particles-js-canvas-el{
+height: 500px !important;
+}
+
+#aa_particles{
+background: #000000;
+}
+
+/*Tab Menu*/
+#navbar-menu1{
+background-color:#000000;
+padding: 3px;
+padding: 10px 20px;
+color: #fff;
+/*#DDDAF9*/
+}
+
+#navbar-menu1{
+ width: 100%; overflow: hidden;
+}
+
+#navbar-menu1 ul{
+ list-style: none; position: relative; float: left; display: block; left: 50%;
+}
+
+#navbar-menu1 ul li {
+ position: relative; float: left; display: block; right: 50%;
+}
+
+/*--------------------------*/
+/*About us Parallax body css*/
+/*--------------------------*/
+
+@media only screen (max-width: 386){
+
+}
+.snip1501 {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+.snip1501 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1501 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1501 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+.snip1501 h2,
+.snip1501 p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.snip1501 h2 {
+  font-family: 'Cardo', serif;
+  display: inline-block;
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+
+.snip1501 p {
+  padding: 8px 0 15px;
+}
+
+.snip1501 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1501:hover > img,
+.snip1501.hover > img {
+  opacity: 0.2;
+}
+
+.snip1501:hover figcaption,
+.snip1501.hover figcaption {
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+@media only screen(min-width:1900px){\
+  .snip1501{
+    padding:0px;
+    margin:0px;
+  }
+}
+
+/*--------------------------*/
+/*About us Parallax body css*/
+/*--------------------------*/
+
+
+
+/*-----------------------*/
+/*---Start Counter CSS --*/
+/*-----------------------*/
+
+.wrapper{
+  background-image: linear-gradient(#FFF6B7, #F6416C);  
+    /*background: linear-gradient(to right, #f7f8f8, #acbb78);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /*clear: both;*/
+}
+
+.counter{
+  /*background-color: yellow;*/
+  background-image: linear-gradient(#FFF6B7, #F6416C);
+    /*background: linear-gradient(to right, #f7f8f8, #acbb78);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding:25px;
+ text-align: center;
+ border-right: 1px dotted black ;
+ /*outline:dotted;*/
+}
+
+.counter img{
+  height: 80px;
+  width:100px;
+}
+
+.counter h2, p{
+  padding: 20px;
+
+}
+.color{
+  color: #000066;
+}
+
+.wrapper .row .counter h2{
+  color: #000066;
+}
+
+/*.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+
+.counter {
+ background-color: #ffffff;
+ padding: 20px 0;
+ border-radius: 5px;
+
+ }
+
+.count-title {
+ font-size: 40px;
+  font-weight: normal;
+    margin-top: 10px;
+     margin-bottom: 0;
+      text-align: center;
+       }
+
+.count-text {
+ font-size: 13px;
+ font-weight: normal;
+ margin-top: 10px;
+ margin-bottom: 0;
+ text-align: center;
+  }
+
+.fa-2x { 
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
+}
+*/
+/*-----------------------*/
+/*---Counter CSS Ends----*/
+/*----------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #fff;
+}
+.timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, .7);
+  font-family: Cardo;
+  font-weight: normal;
+  line-height: 25px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, .07);
+}
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+.timeline-item {
+  padding: 40px 0;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, .5);
+  font-size: 13px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, .5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+}
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, .5);
+  padding-right: 15px;
+}
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.timeline-item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+}
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: 0.3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+.timeline-header__title {
+  color: #fff;
+  font-size: 46px;
+  font-family: Cardo;
+  font-weight: normal;
+  margin: 0;
+}
+.timeline-header__subtitle {
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+.demo-footer {
+  padding: 60px 0;
+  text-align: center;
+}
+.demo-footer a {
+  color: #999;
+  display: inline-block;
+  font-family: Cardo;
+}
+
+
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" >
+      <nav class="navbar home1_menu navbar-fixed navbar-default navbar-mobile bootsnav is-visible xsaa no-background white" data-nav-status="toggle">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="container">
+                  <div class="row">
+                     <!-- Start Header Navigation -->
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand"><img style="width: 150px; height: 90px;" src="assets/krouton_logo.png" class="logo logo-display" alt=""></a>
+                        <a class="navbar-brand" href="#brand"><img style="width: 140px; height: 73px;" src="assets/krouton_logo.png" class="logo logo-scrolled" alt=""></a>
+                     </div>
+                     <!-- End Header Navigation -->
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+                           <li><a href="#home">Home</a> </li>
+                           <li><a href="#banner_img">About Us</a></li>
+                           <li><a href="#service">Service</a></li>
+                        </ul>
+                     </div>
+                     <!-- /.navbar-collapse -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Start Side Menu -->
+         <!-- End Side Menu -->
+      </nav>
+
+  
+      
+<!-- ----------------------------------------------------------- -->
+        <!-- start about us contents -->
+<!-- ----------------------------------------------------------->
+
+      <div class="hero">
+  
+  <div class="parallax-layer layer-6"></div>
+  <div class="parallax-layer layer-5"></div>
+  <div class="parallax-layer layer-4"></div>
+  <div class="parallax-layer bike-1"></div>
+  <div class="parallax-layer bike-2"></div>
+  <div class="parallax-layer layer-3"></div>
+  <div class="parallax-layer layer-2"></div>
+  <div class="parallax-layer layer-1"></div>
+  <div class="logo">
+    <img src="#" alt=""  />
+  </div>
+</div>
+
+<nav>
+  <ul>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    <li><a href="#">Three</a></li>
+    <li><a href="#">Four</a></li>
+    <li><a href="#">Five</a></li>
+    <li><a href="#">Six</a></li>
+  </ul>
+</nav>
+
+<!-- ---------------------------- -->
+<!-- About us parallax body start -->
+<!-- ---------------------------- -->
+<div class="container-fluid" class="row" style="padding:0px; margin:0px;">
+  <div class="col-md-12" style="padding:0px; margin:0px;">
+
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;"> 
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+      <figcaption>
+        <h2>Parsley Montana</h2>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+  </div>
+
+  <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid" class="row" style="padding:0px; margin:0px;">
+  <div class="col-md-12" style="padding:0px; margin:0px;">
+
+     <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;" >
+      <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
+      <figcaption>
+        <h2>Parsley Montana</h2>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+  </div>
+</div>
+</div>
+    
+<div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+        <h2 class="timeline-header__title">Mustafa Kemal Atatürk</h2>
+        <h3 class="timeline-header__subtitle">FATHER OF THE TURKS</h3>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg" />
+                <h2 class="timeline__content-title">1881</h2>
+                <p class="timeline__content-desc">He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
+                    woman, raised him and his sister.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg" />
+                <h2 class="timeline__content-title">1893</h2>
+                <p class="timeline__content-desc">First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of young Mustafa's
+                    superior achievement.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg" />
+                <h2 class="timeline__content-title">1905</h2>
+                <p class="timeline__content-desc">In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://cdn.yemek.com/uploads/2014/11/ataturk-10-kasim.jpg" />
+                <h2 class="timeline__content-title">1908</h2>
+                <p class="timeline__content-desc">In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer in
+                    Salonica andIstanbul and as a military attache in Sofia.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg" />
+                <h2 class="timeline__content-title">1915</h2>
+                <p class="timeline__content-desc">In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive victories and finally repelling the invaders.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://blog.istanbul1881.com/wp-content/uploads/2016/08/atat%C3%BCrk-%C3%BCn-inan%C4%B1lmaz-karizmatik-fotograf%C4%B1_861050.jpg" />
+                <h2 class="timeline__content-title">1916</h2>
+                <p class="timeline__content-desc">Promotedto general in 1916, at age 35, he liberated two major provinces in eastern Turkey thatyear. In the next two years, he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere, achieving another major victory
+                    by stopping the enemyadvance at Aleppo.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg" />
+                <h2 class="timeline__content-title">1919</h2>
+                <p class="timeline__content-desc">On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to startthe War of Independence. In defiance of the Sultan's government, he rallied a liberationarmy in Anatolia and convened the Congress of Erzurum and Sivas
+                    which established thebasis for the new national effort under his leadership.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg" />
+                <h2 class="timeline__content-title">1920</h2>
+                <p class="timeline__content-desc">On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency. Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at
+                    the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg" />
+                <h2 class="timeline__content-title">1922</h2>
+                <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg" />
+                <h2 class="timeline__content-title">1923</h2>
+                <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa
+                    Kemal Pasha wasunanimously elected President of the Republic.</p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg" />
+                <h2 class="timeline__content-title">1934</h2>
+                <p class="timeline__content-desc">The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular,
+                    gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry. In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i></p>
+            </div>
+        </div>
+        <div class="timeline-item" data-text="FATHER OF THE TURKS">
+            <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863" />
+                <h2 class="timeline__content-title">1938</h2>
+                <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------- -->
+<!-- About us parallax body ends -->
+<!-- --------------------------- -->
+
+<!-- --------------------------- -->
+<!-- Start Counter -->
+<!-- --------------------------- -->
+
+<!-- <h1>JQUERY NUMBER ANIMATION</h1>
+<h3>jQuery counter to count up to a target number</h3> -->
+
+<div class="wrapper">
+    <div class="row" class="conterbody">
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+       <h4 class="color">PROJECTS</h4>
+    </div>
+.
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------ -->
+<!-- Counter ends here ----->
+<!-- --------------------------------->
+
+
+<!-- ------------------------------ -->
+<!-- About us contents ends here ----->
+<!-- --------------------------------->
+
+
+
+
+
+   <section id="aa_particles" >
+         <div class="container" style="position: absolute; margin: 0px 100px;">
+            <div class="row">
+               <div class="col-md-12 col-md-offset-5">
+                  <img class="footer-logo text-center" src="assets/footerlogo.png">
+               </div>
+               <div class="col-md-12 footer-columns">
+                  <div class="col-md-3 no-padding">
+                     <div class="weidgetv2-item sm-m-top-40">
+                        <h4 class="text-white">Our Company</h4>
+                        <ul class="m-top-30">
+                           <li><img class="points" src="assets/points.png"><a href="#"> Our Blog</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#"> Customers</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#"> Newsroom</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">We're Hiring</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">White Papers</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 no-padding">
+                     <div class="weidgetv2-item sm-m-top-40">
+                        <h4 class="text-white">Our Services</h4>
+                        <ul class="m-top-30">
+                           <li><img class="points" src="assets/points.png"><a href="#">Full Stack Development</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">Mobility</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">eCommerce</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">IoT</a></li>
+                           <li><img class="points" src="assets/points.png"><a href="#">Cloud Solutions</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 no-padding">
+                     <div class="weidgetv2-item sm-m-top-40">
+                        <h4 class="text-white">IoT</h4>
+                        <ul class="m-top-30">
+                           <li><a href="#"> Home</a></li>
+                           <li><a href="#"> About Us</a></li>
+                           <li><a href="#"> Contact Us</a></li>
+                           <li><a href="#"> Portfolio</a></li>
+                           <li><a href="#"> Blog</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-3 no-padding">
+                     <h4 class="text-white">Our Location</h4>
+                     <h5 class="m-top-20 text-white" style="font-weight: 16px;">ANNA NAGAR</h5>
+                     <p class="m-top-20"><img class="points" src="assets/office.png"> 1/1A, UR Nagar, Anna Nagar West Extn, Chennai, Tamil Nadu 600101.</p>
+                     <p class="m-top-20"> <img class="points" src="assets/phone.png"> <a href="#">&nbsp;095001 21077</a></p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="social">
+                     <a href="#" class="social__button mail"><i class="fa fa-envelope-o"></i></a>
+                     <a href="#" class="social__button facebook"><i class="fa fa-facebook"></i></a>
+                     <a href="#" class="social__button linkedin"><i class="fa fa-linkedin"></i></a>
+                     <a href="#" class="social__button github"><i class="fa fa-github"></i></a>
+                     <a href="#" class="social__button codepen"><i class="fa fa-codepen"></i></a>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="divider"></div> -->
+         </div>
+      </section>
+
+       <div class="col-sm-12 copy-right">
+         <div class="footer-info">
+            <div class="footer-info1">
+               <p>© Copyrights 2018 by Krouton.</p>
+            </div>
+            <div class="footer-info2">
+               <ul class="copyright-links">
+                  <li><a href="" class="a_top_hypers"> Privacy Policy / </a></li>
+                  <li><a href="" class="a_top_hypers"> Privacy Policy / </a></li>
+                  <li><a href="" class="a_top_hypers"> Privacy Policy / </a></li>
+                  <li><a href="" class="a_top_hypers"> Privacy Policy</a></li>
+               </ul>
+            </div>
+            <div class="footer-info3">
+               <h1 class="footerlogo-title" >Krouton</h1>
+            </div>
+         </div>
+      </div>
+
+
+
+<script type="text/javascript">
+  (function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline-1").timeline();
+
+    (function ($) {
+  $.fn.countTo = function (options) {
+    options = options || {};
+    
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+      
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+      
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+      
+      $self.data('countTo', data);
+      
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+      
+      // initialize the element with the starting value
+      render(value);
+      
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        
+        render(value);
+        
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+        
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+          
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+      
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+  
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options);
+  }
+});
+  </script>
+
+ 
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+<script type="text/javascript">
+particlesJS("aa_particles", {
+    "particles": {
+        "number": {
+            "value": 60,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            },
+            "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+            }
+        },
+        "opacity": {
+            "value": 0.25,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.3,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 3,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+var count_particles, stats, update;
+stats = new Stats;
+stats.setMode(0);
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.left = '0px';
+stats.domElement.style.top = '1000px';
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector('.js-count-particles');
+update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+
+    // ------------------------------
+   // About us body parallax script
+  // ------------------------------
+
+
+  // ------------------------------
+   // End About us body parallax script
+   // -------------------------------------
+
+
+      </script>
+      <!-- JS includes -->
+      <script src="scripts/vendor/jquery-1.11.2.min.js"></script>
+      <script src="scripts/vendor/bootstrap.js"></script>
+      <script src="scripts/bootsnav.js"></script>
+
+
+<!-- ---------------------------------------- -->
+<!-- start of About us(top animation ) script -->
+<!-- ------------------------------ ------------>
+
+
+
+<script>
+WebFontConfig = {
+    google: { families: [ 'Lato:400,300,300italic,400italic,700,700italic,900,900italic:latin' ] }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+
+  /* Demo purposes only */
+$(".hover").mouseleave(
+  function() {
+    $(this).removeClass("hover");
+  }
+);
+
+
+// To remove double horizontal scroll bar
+// if($(window).width() <= 400){
+//   $('html').css('overflow', 'hidden');
+// }
+
+
+
+
+</script>
+
+<!-- ------------------------ -->
+<!-- About us script end here -->
+<!-- ------------------------ -->
+       
+   </body>
+</html>
