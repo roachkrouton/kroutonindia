@@ -22,6 +22,10 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
+         
+
 <style type="text/css">  
 
 /*-----------------------------------*/
@@ -203,6 +207,7 @@ nav a {
 html, body {
 max-width: 100%;
 overflow-x: hidden;
+/*overflow-y:hidden;*/
 }
 
 .footer-info{
@@ -270,135 +275,99 @@ color: #fff;
 }
 
 /*--------------------------*/
-/*About us  body animation css*/
+/*About us Parallax body css*/
 /*--------------------------*/
- *, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-.skw-pages {
-  overflow: hidden;
+@media only screen (max-width: 386){
+
+}
+.snip1501 {
+  font-family: 'Josefin Sans', sans-serif;
   position: relative;
-  height: 100vh;
-}
-.skw-page {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-}
-.skw-page__half {
-  position: absolute;
-  top: 0;
-  width: 50%;
-  height: 100vh;
-  transition: transform 1s;
-}
-.skw-page__half--left {
-  left: 0;
-  transform: translate3d(-32.4vh, 100%, 0);
-}
-.skw-page__half--right {
-  left: 50%;
-  transform: translate3d(32.4vh, -100%, 0);
-}
-.skw-page.active .skw-page__half {
-  transform: translate3d(0, 0, 0);
-}
-.skw-page__skewed {
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 140%;
-  height: 100%;
-  transform: skewX(-18deg);
-  background: #000;
-}
-.skw-page__half--left .skw-page__skewed {
-  left: -40%;
-}
-.skw-page__half--right .skw-page__skewed {
-  right: -40%;
-}
-.skw-page__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  padding: 0 30%;
-  color: #fff;
-  transform: skewX(18deg);
-  transition: transform 1s, opacity 1s;
-  background-size: cover;
-}
-.skw-page__half--left .skw-page__content {
-  padding-left: 30%;
-  padding-right: 30%;
-  transform-origin: 100% 0;
-}
-.skw-page__half--right .skw-page__content {
-  padding-left: 30%;
-  padding-right: 30%;
-  transform-origin: 0 100%;
-}
-.skw-page.inactive .skw-page__content {
-  opacity: 0.5;
-  transform: skewX(18deg) scale(0.95);
-}
-.skw-page__heading {
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  font-size: 25px;
+  color: #ffffff;
   text-align: center;
-}
-.skw-page__description {
-  font-size: 18px;
-  text-align: center;
-}
-.skw-page__link {
-  color: #ffa0a0;
-}
-.skw-page-1 .skw-page__half--left .skw-page__content {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-1.jpg');
-}
-.skw-page-1 .skw-page__half--right .skw-page__content {
-  background: #292929;
-}
-.skw-page-2 .skw-page__half--left .skw-page__content {
-  background: #292929;
-}
-.skw-page-2 .skw-page__half--right .skw-page__content {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/slider-2.jpg');
-}
-.skw-page-3 .skw-page__half--left .skw-page__content {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-2.jpg');
-}
-.skw-page-3 .skw-page__half--right .skw-page__content {
-  background: #292929;
-}
-.skw-page-4 .skw-page__half--left .skw-page__content {
-  background: #292929;
-}
-.skw-page-4 .skw-page__half--right .skw-page__content {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
-}
-.skw-page-5 .skw-page__half--left .skw-page__content {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg');
-}
-.skw-page-5 .skw-page__half--right .skw-page__content {
-  background: #292929;
+  font-size: 16px;
+  background-color: #000000;
 }
 
+.snip1501 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1501 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.snip1501 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: 100% 0%;
+  -ms-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+}
+
+.snip1501 h2,
+.snip1501 p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.snip1501 h2 {
+  font-family: 'Cardo', serif;
+  display: inline-block;
+  /*border-bottom: 1px solid rgba(255, 255, 255, 0.2);*/
+}
+
+.snip1501 p {
+  padding: 8px 0 15px;
+}
+
+.snip1501 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1501:hover > img,
+.snip1501.hover > img {
+  opacity: 0.2;
+}
+
+.snip1501:hover figcaption,
+.snip1501.hover figcaption {
+  -webkit-transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+@media only screen(min-width:1900px){\
+  .snip1501{
+    padding:0px;
+    margin:0px;
+  }
+}
 
 /*--------------------------*/
-/*End About us body css animation*/
+/*About us Parallax body css*/
 /*--------------------------*/
 
 
@@ -406,9 +375,38 @@ color: #fff;
 /*-----------------------*/
 /*---Start Counter CSS --*/
 /*-----------------------*/
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700);
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900');
+
+.countbody{
+  background-image: linear-gradient(#FFF6B7, #F6416C);  
+}
+
+.counter{
+  background-image: linear-gradient(#FFF6B7, #F6416C);
+  padding:25px;
+  text-align: center;
+  border-right: 1px dotted black ;
+}
+
+.counter img{
+  height: 80px;
+  width:100px;
+}
+
+.counter h2, p{
+  padding: 20px;
+
+}
+.color{
+  color: #000066;
+}
+
+.wrapper .row .counter h2{
+  color: #000066;
+}
+
+
+/*lines and circle*/
+
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -417,285 +415,8 @@ color: #fff;
 }
 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background: white;
-  -webkit-font-smoothing: antialiased;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-}
-
-#address-bar {
-  width: 100%;
-  height: 40px;
-  background: rgb(46, 46, 46);
-  position: absolute;
-  z-index: -1;
-}
-
-#menu-bar {
-  width: 100%;
-  height: 160px;
-  background: rgb(69, 69, 69);
-  position: absolute;
-  margin-top: 40px;
-  border-top: 1px solid rgb(77, 77, 77);
-  z-index: -1;
-  -webkit-box-shadow: inset 0px -27px 104px -33px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: inset 0px -27px 104px -33px rgba(0, 0, 0, 0.36);
-  box-shadow: inset 0px -27px 104px -33px rgba(0, 0, 0, 0.9);
-}
-
-#menu-bar2 {
-  margin-top: 150px;
-  position: absolute;
-  height: 100px;
-  width: 1000px;
-  background: rgb(249, 249, 249);
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.53);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.53);
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.53);
-}
-
-#main-wrap {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-#logo img {
-  margin-top: 55px;
-  width: 80px;
-  margin-left: -1px;
-  hegith: 80px;
-}
-
-#adress-bar-text {
-  position: absolute;
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(218, 218, 218);
-}
-
-#adress-bar-text a {
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(236, 233, 70);
-  transition: all 0.2s;
-}
-
-#adress-bar-text a:hover {
-  font-size: 13px;
-  font-weight: 400;
-  color: white;
-}
-
-.fa-facebook-square {
-  margin-top: 5px;
-  position: absolute;
-  font-size: 30px;
-  color: rgb(70, 98, 158);
-  margin-left: 938px;
-  transition: all 0.2s;
-}
-
-.fa-twitter-square {
-  position: absolute;
-  color: rgb(94, 169, 221);
-  margin-left: 973px;
-  font-size: 30px;
-  margin-top: 5px;
-  transition: all 0.2s;
-}
-
-.fa-phone,
-.fa-home {
-  position: absolute;
-  color: rgb(152, 152, 152);
-  margin-left: 390px;
-  font-size: 50px;
-  margin-top: 72px;
-  transition: all 0.1s;
-}
-
-.fa-phone {
-  margin-left: 225px;
-}
-
-.fa-home {
-  margin-left: 465px;
-}
-
-.fa-clock-o {
-  position: absolute;
-  color: rgb(152, 152, 152);
-  margin-left: 762px;
-  font-size: 50px;
-  margin-top: 72px;
-  transition: all 0.1s;
-}
-
-#large-p,
-#large-p2,
-#large-p3 {
-  color: rgb(221, 221, 221);
-  position: absolute;
-  margin-top: 72px;
-  margin-left: 445px;
-  text-decoration: none;
-  font-weight: 900;
-  letter-spacing: 1px;
-  font-size: 18px;
-}
-
-#large-p {
-  margin-left: 279px;
-}
-
-#large-p2 {
-  margin-left: 520px;
-}
-
-#large-p3 {
-  margin-left: 818px;
-}
-
-#small-p,
-#small-p2,
-#small-p3 {
-  color: rgb(152, 152, 152);
-  margin-top: 96px;
-  font-size: 16px;
-  margin-left: 445px;
-  position: absolute;
-}
-
-#small-p {
-  margin-left: 280px;
-}
-
-#small-p2 {
-  margin-left: 521px;
-}
-
-#small-p3 {
-  margin-left: 818px;
-}
-
-
-/*
-.fa-youtube-square{
-  position: absolute;
-  color: #c4302b;
-  margin-left: 975px;
-  font-size: 30px;
-  margin-top: 5px;
-  transition: all 0.2s;
-}
-
-*/
-
-.fa-twitter-square:hover,
-.fa-facebook-square:hover {
-  color: white;
-}
-
-#nav-one {
-  position: relative;
-  float: left;
-  margin-left: -25px;
-  padding-top: 35px;
-}
-
-#nav-one ul {
-  list-style: none;
-}
-
-#nav-one ul li {
-  display: inline;
-  padding-left: 70px;
-  position: center;
-}
-
-#nav-one ul li a {
-  color: rgb(152, 152, 152);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 4px;
-  font-size: 16px;
-  transition: ;
-  padding-bottom: 38px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-}
-
-#nav-one ul li a:hover {
-  color: rgb(69, 69, 69);
-  border-bottom: 4px solid rgb(236, 233, 70);
-}
-
-#page-name-bar{
-  width: 100%;
-  height: 200px;
-  margin-top: 200px;
-  position: absolute;
-  background-color: rgb(238, 238, 238);
-  background-image: url(https://demo.proteusthemes.com/buildpress/wp-content/uploads/sites/16/2014/10/title-area-pattern.png);
-  background-repeat: repeat;
-  border-bottom: 1px solid rgb(215, 215, 215);
-  
-}
-
-#page-name-bar-heading{
-  position: absolute;
-  margin-top: 110px;
-  width: 1000px;
-}
-
-#p-n-b-h{
-  color: rgb(51, 51, 51);
-  margin-left: -20px;
-  margin-top: 50px;
-  text-align: center;
-  color: rgb(51, 51, 51);
-  font-size: 40px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: -1px;
-  
-}
-
-#p-n-b-h2{
-  position: absolute;
-  margin-top: 45px;
-  font-size: 18px;
-  margin-left: 345px;
-  font-weight: 600;
-  font-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(77, 77, 77);
-  padding-bottom: 10px;
-}
-
-#p-n-b-h3{
-  position: absolute;
-  margin-top: 375px;
-  font-size: 18px;
-  margin-left: 337px;
-  font-weight: 600;
-  font-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(77, 77, 77);
-  padding-bottom: 10px;
-}
-
-
-
 /* _wrapper.css */
-.wrapper {
+.wrapperlines {
   z-index: 2;
   padding-left: 18px;
   padding-right: 18px;
@@ -704,16 +425,20 @@ body {
   margin-right: auto;
 }
 
-
 /* _timeline.css */
 .timeline {
   position: relative;
-  height: 3160px;
-  margin: 670px auto;
+  height: 1200px;
+  margin: 100px auto 300px auto;
   padding: 160px 0;
   margin-left: -12px;
-
 }
+
+.milestone{
+  /*background-color: rgba(47,47,185,0.4);*/
+  background-image: linear-gradient(#614385,#516395);
+}
+
 .timeline::before {
   content: "";
   position: absolute;
@@ -722,6 +447,7 @@ body {
   width: 4px;
   height: 100%;
   background-color: rgb(77, 77, 77);
+  /*background:url(https://freenaturestock.s3.amazonaws.com/1417.jpg);*/
 }
 @media (min-width: 800px){
   .timeline::before{
@@ -849,6 +575,7 @@ body {
     margin-top: -2px;
   }
 }
+
 .timeline__item__content__date {
   margin: 0;
   padding: 8px 12px;
@@ -875,167 +602,14 @@ body {
   }
 }
 
-#about-us-text{
-  color: #999999;
-  margin-top: 340px;
-  margin-left: 135px;
-  font-size: 16px;
-  letter-spacing: 1px;
-  width: 700px;
-  text-align: center;
-  line-height: 31px;
-   z-index: 3;
-  position: absolute;
+.milestone .container h2{
+   text-align: center;
+   padding-top: 100px;
+   color:blue;
+   text-shadow: 2px 2px 2px green;
 }
 
-#footer-back{
-  width: 100%;
-  height: 350px;
-  position: absolute;
-    -webkit-box-shadow: inset 0px 35px 104px -33px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: inset 0px 35px 104px -33px rgba(0, 0, 0, 0.36);
-  box-shadow: inset 0px 35px 104px -33px rgba(0, 0, 0, 0.9);
-  background: rgb(69, 69, 69);
-  margin-top: 4233px;
-  z-index: -1;
-}
-
-#footer-back2 {
-  width: 100%;
-  margin-top: 4583px;
-  height: 60px;
-  background: rgb(46, 46, 46);
-  position: absolute;
-  z-index: -1;
-}
-
-#logo-bottom{
-  z-index: 99;
-}
-
-#logo-bottom img {
-  position: absolute;
-  margin-top: -340px;
-  width: 80px;
-  margin-left: -1px;
-  z-index: 99;
-  height: 80px;
-}
-
-#cpyright-txt{
-  position: absolute;
-  margin-top: -044px;
-  font-size: 13px;
-  font-weight: 400;
-  color: rgb(218, 218, 218);
-}
-
-#footer-menu{
-    position: absolute;
-  margin-top: -352px;
-  margin-left: 150px;
-}
-
-#footer-menu2{
-  font-size: 14px;
-  margin-left: 0px;
-  color: rgb(228,228,228);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3{
-  position: absolute;
-  font-size: 12px;
-  margin-top: -352px;
-  margin-left: 0px;
-  width: 200px;
-  color: rgb(130,130,130);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3 a:hover{
-  color: #fcc71f;
-}
-
-#footer-menub{
-  position: absolute;
-  margin-top: -352px;
-  margin-left: 335px;
-}
-
-#footer-menu2b{
-  font-size: 14px;
-  margin-left: 0px;
-  color: rgb(228,228,228);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3b{
-    font-size: 12px;
-  margin-left: 0px;
-  color: rgb(130,130,130);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  line-height: 30px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3b a{
-  font-size: 12px;
-  margin-left: 0px;
-  color: rgb(130,130,130);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  line-height: 30px;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3b a:hover{
-  color: #fcc71f;
-}
-#footer-menu3{
-  font-size: 12px;
-  margin-top: 6px;
-  margin-left: 0px;
-  width: 200px;
-  color: rgb(130,130,130);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 400;
-  text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#footer-menu3 a:hover{
-  color: #fcc71f;
-}
-
-#right-border-grey{
-  position: absolute;
-  width: 500px;
-  height: 296px;
-  margin-left: -4px;
-  margin-top: -700px;
-  border-right: 4px solid rgb(77, 77, 77);
-}
-
-/*-----------------------*/
-/*---Counter CSS Ends----*/
-/*----------------------*/
+/*lines and circle*/
 
 </style>
 </head>
@@ -1105,36 +679,226 @@ body {
 </nav>
 
 <!-- ---------------------------- -->
-<!-- About us animation body start -->
+<!-- About us parallax body start -->
 <!-- ---------------------------- -->
+<div class="container-fluid" class="row" style="padding:0px; margin:0px;">
+  <div class="col-md-12" style="padding:0px; margin:0px;">
 
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
 
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;"> 
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
 
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
 
-
-
-  <!--<a href="#"><i class="fa fa-youtube-square"></i></a>-->
- 
- <!--  <div id="nav-one">
-    <ul>
-      <li><a href="#">home</a></li>
-      <li><a href="#">services</a></li>
-      <li><a href="#">gallery</a></li>
-      <li><a href="#">about us</a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
-  </div> -->
-  
-  <div id="page-name-bar-heading">
-    
-    <p id="p-n-b-h">About Us</p>
-    <p id="p-n-b-h2">A LITTLE SOMETHING ABOUT US</p>
-    <p id="p-n-b-h3">OUR HISTORY AND ACHIEVEMENTS</p>
-    
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample17.jpg" alt="sample17" />
+      <figcaption>
+        <h2>Parsley Montana</h2>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
   </div>
-  
-    <section class="timeline">
-  <div class="wrapper">
+
+  <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample16.jpg" alt="sample16" />
+      <figcaption>
+        <h2>Brandon Guidelines</h2>
+        <p>A voice crackles in Calvin's radio: 'Enemy fighters at two o'clock!, 'Roger. What should I do until then?'</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+     <div class="col-md-3 col-sm-4 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample15.jpg" alt="sample15" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid" class="row" style="padding:0px; margin:0px;">
+  <div class="col-md-12" style="padding:0px; margin:0px;">
+
+     <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;">
+      <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
+      <figcaption>
+        <h2>Nigel Nigel</h2>
+        <p>Weekends don't count unless you spend them doing something completely pointless.</p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+     </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-12" style="padding:0px; margin:0px;">
+    <figure class="snip1501" style="padding:0px; margin:0px;" >
+      <img src="https://cdn.pixabay.com/photo/2017/11/13/23/33/landscape-2947094_960_720.jpg" />
+      <figcaption>
+        <h2>Parsley Montana</h2>
+        <p>The only skills I have the patience to learn are those that have no real application in life. </p>
+      </figcaption>
+      <a href="#"></a>
+    </figure>
+  </div>
+</div>
+</div>
+    
+
+<!-- --------------------------- -->
+<!-- About us parallax body ends -->
+<!-- --------------------------- -->
+
+<!-- --------------------------- -->
+<!-- Start Counter -->
+<!-- --------------------------- -->
+
+<!-- <h1>JQUERY NUMBER ANIMATION</h1>
+<h3>jQuery counter to count up to a target number</h3> -->
+
+<div class="wrapper countbody">
+    <div class="row" class="conterbody">
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+       <h4 class="color">PROJECTS</h4>
+    </div>
+.
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+
+    <div class="counter col_fourth col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <img src="assets/customer.svg" / >
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <h4 class="color">PROJECTS</h4>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------ -->
+<!-- Counter ends here ----->
+<!-- --------------------------------->
+
+
+<!-- start Lines and circle --> 
+<div class="milestone">
+   <div class="container">
+     <h2>MILESTONE</h2>
+   </div>
+  <section class="timeline">
+  <div class="wrapperlines">
     <div class="timeline__item timeline__item--0">
       <div class="timeline__item__station"></div>
       <div class="timeline__item__content">
@@ -1161,10 +925,10 @@ keen interest in cool room construction.</p>
       <div class="timeline__item__station"></div>
       <div class="timeline__item__content">
         <h2 class="timeline__item__content__date">2000 July 9</h2>
-        <p class="timeline__item__content__description">On top of cool room, chassis and portable building fabrication , we begin a partnership with one of Australia's largest manufacturer of switch rooms, temperature controlled shelters and specific designed transportable rooms furthering our knowledge in this field. To date close to 9000 sandwich panel buildings have been manufactured by CMT panels with our partner.</p>
+        <p class="timeline__item__content__description">On top of cool room, chassis and portable building fabrication , we begin a partnership with one of Australia's largest manufacturer of switch rooms, temperature controlled </p>
       </div>
     </div>
-    <div class="timeline__item timeline__item--4">
+    <!-- <div class="timeline__item timeline__item--4">
       <div class="timeline__item__station"></div>
       <div class="timeline__item__content">
         <h2 class="timeline__item__content__date">2003 Nov. 12</h2>
@@ -1199,61 +963,12 @@ keen interest in cool room construction.</p>
         <p class="timeline__item__content__description">Our crew of guys help with the south Melbourne market relocation.</p>
       </div>
     </div>
-    <div class="timeline__item timeline__item--9">
-      <div class="timeline__item__station"></div>
-      <div class="timeline__item__content">
-        <h2 class="timeline__item__content__date">2017 +</h2>
-        <p class="timeline__item__content__description">Our company continues to grow and make marks in the construction industry.</p>
-      </div>
-    </div>
+    -->
   </div>
-</section>
-  
-  <div id="logo-bottom"><img src="https://images.discordapp.net/.eJwFwUtygjAAANC7sJeQhBB0BwJDmaqt1tCuOggY6IAJJOFjp3fve7-WGTtrZzVaS7UDoGpVKcbKVlqMBa9tLgTv6kK2yi5FDwqti7Lp64dWABEfIp9g6HoUUQS3LkDUd7HreoRQTD0CEQR1NrM1iU98DQ7BcU_LIBhCdneiVxW_s6yq9rmzgRJt_U-8uVFzcDxsNFLePMwpk90tIcezSfv86-ONTUMzKZEsxfP6ncvp6gck9JdndOrCS9jmYczJUvemj9JzzPumnk12f1R4ishavjDX_pHc-vsHI29O9Q.m7a6WeXDiUw56NXKm3ws3d73xfg"/></div>
+</section> 
+<div> 
 
-<div id="cpyright-txt"><p>Copyright @ 2017 CMT Panels. All Rights Reserved. </p></div>
-
-<div id="footer-menub">
-  <p id="footer-menu2b">Contact</p>
-  <p id="footer-menu3b">
-    14/350 Settlement Rd,
-    Thomastown VIC 3074<br>
-    (03) 9465 9639</a><br>
-    admin@cmtpanels.com</a><br>
-  </p>
-</div>
-<div id="footer-menu">
-
-  <p id="footer-menu2">Navigation</p>
-  
-  <p id="footer-menu3b">
-    <a href="">- Home</a><br>
-    <a href="">- Services</a><br>
-    <a href="">- Gallery</a><br>
-    <a href="">- About Us</a><br>
-    <a href="">- Contact Us</a><br>
-  </p>
-</div>
-  
-<div id="right-border-grey"></div>
-</div>
-<!-- --------------------------- -->
-<!-- End About us animation body ends -->
-<!-- --------------------------- -->
-
-<!-- --------------------------- -->
-<!-- Start Counter -->
-<!-- --------------------------- -->
-
-<!-- <h1>JQUERY NUMBER ANIMATION</h1>
-<h3>jQuery counter to count up to a target number</h3> -->
-
-
-<!-- ------------------------------ -->
-<!-- Counter ends here ----->
-<!-- --------------------------------->
-
-
+<!-- end linles and circle -->
 <!-- ------------------------------ -->
 <!-- About us contents ends here ----->
 <!-- --------------------------------->
@@ -1262,7 +977,9 @@ keen interest in cool room construction.</p>
 
 
 
-   <!-- <section id="aa_particles" >
+
+
+   <section id="aa_particles" >
          <div class="container" style="position: absolute; margin: 0px 100px;">
             <div class="row">
                <div class="col-md-12 col-md-offset-5">
@@ -1324,6 +1041,7 @@ keen interest in cool room construction.</p>
                   </div>
                </div>
             </div>
+            <!-- <div class="divider"></div> -->
          </div>
       </section>
 
@@ -1344,63 +1062,112 @@ keen interest in cool room construction.</p>
                <h1 class="footerlogo-title" >Krouton</h1>
             </div>
          </div>
-      </div> -->
+      </div>
+
+
 
 <script type="text/javascript">
-  $(document).ready(function() {
-
-  var curPage = 1;
-  var numOfPages = $(".skw-page").length;
-  var animTime = 1000;
-  var scrolling = false;
-  var pgPrefix = ".skw-page-";
-
-  function pagination() {
-    scrolling = true;
-
-    $(pgPrefix + curPage).removeClass("inactive").addClass("active");
-    $(pgPrefix + (curPage - 1)).addClass("inactive");
-    $(pgPrefix + (curPage + 1)).removeClass("active");
-
-    setTimeout(function() {
-      scrolling = false;
-    }, animTime);
+    (function ($) {
+  $.fn.countTo = function (options) {
+    options = options || {};
+    
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+      
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+      
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+      
+      $self.data('countTo', data);
+      
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+      
+      // initialize the element with the starting value
+      render(value);
+      
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        
+        render(value);
+        
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+        
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+          
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+      
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
   };
-
-  function navigateUp() {
-    if (curPage === 1) return;
-    curPage--;
-    pagination();
+  
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
   };
+  
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
 
-  function navigateDown() {
-    if (curPage === numOfPages) return;
-    curPage++;
-    pagination();
-  };
-
-  $(document).on("mousewheel DOMMouseScroll", function(e) {
-    if (scrolling) return;
-    if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-      navigateUp();
-    } else { 
-      navigateDown();
-    }
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
   });
-
-  $(document).on("keydown", function(e) {
-    if (scrolling) return;
-    if (e.which === 38) {
-      navigateUp();
-    } else if (e.which === 40) {
-      navigateDown();
-    }
-  });
-
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options);
+  }
 });
-</script>
+  </script>
 
-
+ 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 <script type="text/javascript">
 particlesJS("aa_particles", {
@@ -1534,24 +1301,7 @@ requestAnimationFrame(update);
     // ------------------------------
    // About us body parallax script
   // ------------------------------
-function customWayPoint(className, addClassName, customOffset) {
-  var waypoints = $(className).waypoint({
-    handler: function(direction) {
-      if (direction == "down") {
-        $(className).addClass(addClassName);
-      } else {
-        $(className).removeClass(addClassName);
-      }
-    },
-    offset: customOffset
-  });
-}
 
-var defaultOffset = '50%';
-
-for (i=0; i<17; i++) {
-  customWayPoint('.timeline__item--'+i, 'timeline__item-bg', defaultOffset);
-}
 
   // ------------------------------
    // End About us body parallax script
@@ -1568,6 +1318,9 @@ for (i=0; i<17; i++) {
 <!-- ---------------------------------------- -->
 <!-- start of About us(top animation ) script -->
 <!-- ------------------------------ ------------>
+
+
+
 <script>
 WebFontConfig = {
     google: { families: [ 'Lato:400,300,300italic,400italic,700,700italic,900,900italic:latin' ] }
@@ -1589,7 +1342,38 @@ $(".hover").mouseleave(
   }
 );
 
+
+// To remove double horizontal scroll bar
+// if($(window).width() <= 400){
+//   $('html').css('overflow', 'hidden');
+// }
+
+
+
+
 </script>
+<!-- lines and circle -->
+<script>
+  function customWayPoint(className, addClassName, customOffset) {
+  var waypoints = $(className).waypoint({
+    handler: function(direction) {
+      if (direction == "down") {
+        $(className).addClass(addClassName);
+      } else {
+        $(className).removeClass(addClassName);
+      }
+    },
+    offset: customOffset
+  });
+}
+
+var defaultOffset = '50%';
+
+for (i=0; i<17; i++) {
+  customWayPoint('.timeline__item--'+i, 'timeline__item-bg', defaultOffset);
+}
+</script>
+
 <!-- ------------------------ -->
 <!-- About us script end here -->
 <!-- ------------------------ -->
